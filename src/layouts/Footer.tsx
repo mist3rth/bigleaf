@@ -29,7 +29,7 @@ export default function Footer() {
             <ArrowUpRight className="w-10 h-10" />
           </div>
           <div className="min-w-0 w-full">
-            <h3 className="font-display font-extrabold text-xl sm:text-4xl md:text-[40px] lg:text-6xl tracking-tight leading-none uppercase break-words hyphens-auto">
+            <h3 className="font-display font-extrabold text-[26px] sm:text-4xl md:text-[40px] lg:text-6xl tracking-tight leading-none uppercase break-words hyphens-auto">
               Rejoindre la communauté<span className="text-gold">.</span>
             </h3>
             <p className="text-[10px] sm:text-xs text-white/70 font-mono tracking-widest uppercase mt-3 truncate sm:whitespace-normal">
