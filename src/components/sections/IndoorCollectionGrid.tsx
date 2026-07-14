@@ -82,7 +82,7 @@ export default function IndoorCollectionGrid() {
               referrerPolicy="no-referrer"
             />
             {/* Dark green leaves overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-primary/95 via-primary/50 to-primary/20 opacity-80 group-hover:opacity-90 transition-all duration-300" />
+            <div className="absolute -inset-1 bg-gradient-to-t from-primary/95 via-primary/50 to-primary/20 opacity-80 group-hover:opacity-90 transition-all duration-300" />
 
             {/* Expansion Arrow Button Top-Right to match image layout */}
             <div className="absolute top-5 right-5 w-10 h-10 bg-white text-primary rounded-full flex items-center justify-center shadow-lg transform translate-x-2 -translate-y-2 opacity-0 group-hover:opacity-100 group-hover:translate-x-0 group-hover:translate-y-0 transition-all duration-300">
