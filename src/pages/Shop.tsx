@@ -229,7 +229,7 @@ export default function ProductListPage() {
                   setSelectedCategory('all');
                   setSelectedCollection(null);
                 }}
-                className={`w-full text-left px-3.5 py-2 rounded-lg text-xs font-semibold transition-all flex items-center justify-between ${
+                className={`w-full text-left px-3.5 py-2 rounded-lg text-xs font-semibold transition-all flex items-center justify-between cursor-pointer ${
                   selectedCategory === 'all' && !selectedCollection
                     ? 'bg-primary text-white' 
                     : 'bg-white hover:bg-secondary text-primary/80 border border-primary/5'
@@ -247,7 +247,7 @@ export default function ProductListPage() {
                       setSelectedCategory(cat.id);
                       setSelectedCollection(null);
                     }}
-                    className={`w-full text-left px-3.5 py-2 rounded-lg text-xs font-semibold transition-all flex items-center justify-between ${
+                    className={`w-full text-left px-3.5 py-2 rounded-lg text-xs font-semibold transition-all flex items-center justify-between cursor-pointer ${
                       isActive 
                         ? 'bg-primary text-white' 
                         : 'bg-white hover:bg-secondary text-primary/80 border border-primary/5'
@@ -275,7 +275,7 @@ export default function ProductListPage() {
                       e.preventDefault();
                       setSelectedDifficulty(diff);
                     }}
-                    className={`px-3 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-wider border transition-all ${
+                    className={`px-3 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-wider border transition-all cursor-pointer ${
                       isActive 
                         ? 'bg-primary text-white border-primary' 
                         : 'bg-white border-primary/10 text-primary/70 hover:bg-white'
