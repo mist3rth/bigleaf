@@ -3,7 +3,7 @@ import { useUI } from '../../context/UIContext';
 import { useCart } from '../../context/CartContext';
 import heroBg from '../../hero2.webp';
 import tablierImg from '../../tablier.webp';
-import vigHomeImg from '../../vig-home.webp';
+import vigHomeImg from '../../vig-home-v2.webp';
 import succulent_5Img from '../../assets/succulent_5.webp';
 import { useState, useEffect } from 'react';
 

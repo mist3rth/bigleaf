@@ -1,27 +1,30 @@
 import React from 'react';
 import { Reveal } from '../ui/Reveal';
 import Hero from '../components/sections/Hero';
-import HeroBanner from '../components/sections/HeroBanner';
-import FeaturedCollections from '../components/sections/FeaturedCollections';
-import IntroSection from '../components/sections/IntroSection';
-import NewPlants from '../components/sections/NewPlants';
-import IndoorCollectionGrid from '../components/sections/IndoorCollectionGrid';
-import MonthlyContest from '../components/sections/MonthlyContest';
-import CuratedGoods from '../components/sections/CuratedGoods';
-import FaqSection from '../components/sections/FaqSection';
+
+const HeroBanner = React.lazy(() => import('../components/sections/HeroBanner'));
+const FeaturedCollections = React.lazy(() => import('../components/sections/FeaturedCollections'));
+const IntroSection = React.lazy(() => import('../components/sections/IntroSection'));
+const NewPlants = React.lazy(() => import('../components/sections/NewPlants'));
+const IndoorCollectionGrid = React.lazy(() => import('../components/sections/IndoorCollectionGrid'));
+const MonthlyContest = React.lazy(() => import('../components/sections/MonthlyContest'));
+const CuratedGoods = React.lazy(() => import('../components/sections/CuratedGoods'));
+const FaqSection = React.lazy(() => import('../components/sections/FaqSection'));
 
 export default function HomeView() {
   return (
     <>
       <Reveal><Hero /></Reveal>
-      <Reveal><HeroBanner /></Reveal>
-      <Reveal><FeaturedCollections /></Reveal>
-      <Reveal><IntroSection /></Reveal>
-      <Reveal><NewPlants /></Reveal>
-      <Reveal><MonthlyContest /></Reveal>
-      <Reveal><IndoorCollectionGrid /></Reveal>
-      <Reveal><CuratedGoods /></Reveal>
-      <Reveal><FaqSection /></Reveal>
+      <React.Suspense fallback={<div className="h-screen bg-transparent" />}>
+        <Reveal><HeroBanner /></Reveal>
+        <Reveal><FeaturedCollections /></Reveal>
+        <Reveal><IntroSection /></Reveal>
+        <Reveal><NewPlants /></Reveal>
+        <Reveal><MonthlyContest /></Reveal>
+        <Reveal><IndoorCollectionGrid /></Reveal>
+        <Reveal><CuratedGoods /></Reveal>
+        <Reveal><FaqSection /></Reveal>
+      </React.Suspense>
     </>
   );
 }
