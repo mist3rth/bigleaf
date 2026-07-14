@@ -3,6 +3,7 @@ import { useUI } from '../../context/UIContext';
 import { useCart } from '../../context/CartContext';
 import heroBg from '../../hero2.webp';
 import tablierImg from '../../tablier.webp';
+import vigHomeImg from '../../vig-home.webp';
 import { useState, useEffect } from 'react';
 
 interface HeroProps {
@@ -83,7 +84,7 @@ export default function Hero() {
         >
           <div className="relative w-14 h-14 rounded-xl overflow-hidden flex-shrink-0 border border-white/20">
             <img 
-              src={tablierImg} 
+              src={vigHomeImg} 
               alt="Tablier BigLeaf" 
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               referrerPolicy="no-referrer"
