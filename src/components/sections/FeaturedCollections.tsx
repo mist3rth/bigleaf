@@ -1,4 +1,3 @@
-import succulent_5Img from '../../assets/succulent_5.webp';
 import { ArrowUpRight } from 'lucide-react';
 import { useUI } from '../../context/UIContext';
 import { useCart } from '../../context/CartContext';
@@ -18,13 +17,6 @@ export default function FeaturedCollections() {
 
   const cards = [
     {
-      id: 'pets-friendly',
-      title: 'Plantes saines & Pet-Friendly',
-      subtitle: 'Sans aucun danger pour vos animaux de compagnie, faciles à vivre.',
-      image: succulent_5Img,
-      badge: 'Non-toxique'
-    },
-    {
       id: 'exterior',
       title: 'Cactus Graphiques Rares',
       subtitle: 'Silhouettes sculpturales et espèces insolites recherchées.',
@@ -42,7 +34,7 @@ export default function FeaturedCollections() {
 
   return (
     <section className="py-8 px-4 md:px-8 max-w-screen-2xl mx-auto">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {cards.map((card) => (
           <div
             key={card.id}
