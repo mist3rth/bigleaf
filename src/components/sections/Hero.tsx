@@ -53,14 +53,14 @@ export default function Hero() {
 
         {/* 2 visible CTAs in the Hero */}
         <div className="flex flex-col sm:flex-row gap-4 mt-8 w-full max-w-md justify-start">
-          <a
-            href="#collection-grid"
+          <button aria-label="Bouton d'action"
+            onClick={onDiscoverClick}
             className="group px-8 py-4 bg-white text-primary rounded-full font-sans font-bold text-xs tracking-wider uppercase transition-all duration-300 hover:bg-gold hover:text-primary shadow-lg flex items-center justify-center space-x-2 cursor-pointer whitespace-nowrap"
             id="hero-cta-shop"
           >
             <span className="whitespace-nowrap">Visiter le Shop</span>
             <ChevronRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-          </a>
+          </button>
           <a
             href="#indoor-collection"
             className="group px-8 py-4 bg-transparent border-2 border-white/40 text-white rounded-full font-sans font-bold text-xs tracking-wider uppercase transition-all duration-300 hover:bg-white/10 hover:border-white flex items-center justify-center space-x-2 cursor-pointer whitespace-nowrap"
