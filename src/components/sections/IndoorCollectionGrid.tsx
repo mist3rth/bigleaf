@@ -78,7 +78,7 @@ export default function IndoorCollectionGrid() {
             <img
               src={item.image}
               alt={item.title}
-              className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 scale-[1.03] group-hover:scale-110"
+              className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               referrerPolicy="no-referrer"
             />
             {/* Dark green leaves overlay */}
