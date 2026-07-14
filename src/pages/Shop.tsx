@@ -164,7 +164,7 @@ export default function ProductListPage() {
             <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
             Retour à l'accueil
           </button>
-          <h1 className="font-display font-black text-3xl md:text-4xl tracking-tight uppercase">
+          <h1 className="font-display font-black text-2xl min-[380px]:text-[26px] md:text-4xl tracking-tight uppercase">
             Notre Collection<span className="text-accent">.</span>
           </h1>
           <p className="text-xs text-primary/70 font-mono tracking-widest uppercase mt-1">
