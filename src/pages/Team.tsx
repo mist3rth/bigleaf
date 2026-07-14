@@ -65,7 +65,7 @@ export default function TeamPage() {
         
         {/* Breadcrumb & Return CTA */}
         <div className="mb-12">
-          <button 
+          <button aria-label="Retour" 
             onClick={onBack}
             className="inline-flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-wider text-primary/75 hover:text-accent transition-all cursor-pointer group"
           >
@@ -180,7 +180,7 @@ export default function TeamPage() {
                     <h3 className="font-display font-bold text-lg text-primary tracking-tight group-hover:text-gold transition-colors">
                       {member.name}
                     </h3>
-                    <p className="text-xs font-mono text-primary/40 uppercase tracking-wider mt-1">
+                    <p className="text-xs font-mono text-primary/70 uppercase tracking-wider mt-1">
                       {member.role}
                     </p>
                     <p className="text-xs sm:text-sm text-primary/75 font-sans leading-relaxed mt-3.5">
@@ -217,7 +217,7 @@ export default function TeamPage() {
                       <Mail className="w-4 h-4" />
                     </a>
                   </div>
-                  <span className="text-[10px] font-mono text-primary/30 uppercase">
+                  <span className="text-[10px] font-mono text-primary/70 uppercase">
                     BigLeaf Artisans
                   </span>
                 </div>
@@ -303,7 +303,7 @@ export default function TeamPage() {
                 <textarea rows={4} placeholder="Comment pouvons-nous vous aider ?" className="w-full px-4 py-3 bg-white border border-primary/15 rounded-xl focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-all text-sm text-primary placeholder-primary/40 resize-none shadow-sm"></textarea>
               </div>
               
-              <button type="submit" className="w-full px-6 py-3.5 bg-primary text-white hover:bg-accent rounded-xl font-sans font-bold text-sm tracking-wide transition-all shadow-md cursor-pointer">
+              <button aria-label="Bouton d'action" type="submit" className="w-full px-6 py-3.5 bg-primary text-white hover:bg-accent rounded-xl font-sans font-bold text-sm tracking-wide transition-all shadow-md cursor-pointer">
                 Envoyer le message
               </button>
             </form>

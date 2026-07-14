@@ -36,7 +36,7 @@ export default function IntroSection() {
 
         {/* Center Column: Capsule Horizontal Photo Pill */}
         <div className="lg:col-span-4 flex justify-center">
-          <button 
+          <button aria-label="Bouton d'action" 
             onClick={() => navigate('team')}
             className="relative w-full max-w-sm h-32 md:h-36 rounded-full overflow-hidden group shadow-premium border border-primary/5 cursor-pointer text-left focus:outline-none"
             title="Découvrir l'équipe"

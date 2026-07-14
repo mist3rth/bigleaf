@@ -32,7 +32,7 @@ export class ErrorBoundary extends React.Component<Props, State> {
             <p className="text-sm font-sans mb-6 text-primary/70">
               Nous sommes désolés, l'application a rencontré un problème inattendu.
             </p>
-            <button
+            <button aria-label="Bouton d'action"
               className="px-6 py-2.5 bg-primary text-white rounded-full font-bold uppercase text-xs hover:bg-accent transition-colors"
               onClick={() => window.location.reload()}
             >

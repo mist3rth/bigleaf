@@ -15,7 +15,7 @@ export const Badge: React.FC<BadgeProps> = ({
   onRemove,
   ...props 
 }) => {
-  const baseStyles = 'inline-flex items-center gap-1.5 px-2.5 py-1 uppercase font-bold tracking-wider rounded-full whitespace-nowrap select-none';
+  const baseStyles = 'inline-flex items-center gap-2 min-w-[44px] min-h-[44px] px-2.5 py-1 uppercase font-bold tracking-wider rounded-full whitespace-nowrap select-none';
   
   const variants = {
     default: 'text-[9px] bg-primary text-white',
@@ -28,7 +28,7 @@ export const Badge: React.FC<BadgeProps> = ({
     <span className={`${baseStyles} ${variants[variant]} ${className}`} {...props}>
       {children}
       {onRemove && (
-        <button 
+        <button aria-label="Bouton d'action" 
           onClick={(e) => {
             e.stopPropagation();
             e.preventDefault();

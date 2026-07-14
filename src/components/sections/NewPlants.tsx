@@ -81,7 +81,7 @@ export default function NewPlants() {
             {CATEGORIES.filter(cat => cat.id !== 'all').map((cat) => {
               const isActive = localCategory === cat.id;
               return (
-                <button
+                <button aria-label="Bouton d'action"
                   key={cat.id}
                   onClick={() => setLocalCategory(isActive ? 'all' : cat.id)}
                   className={`px-6 py-2.5 rounded-full text-xs font-semibold tracking-wider uppercase transition-all cursor-pointer ${
@@ -96,7 +96,7 @@ export default function NewPlants() {
             })}
           </div>
 
-          <button 
+          <button aria-label="Bouton d'action" 
             onClick={() => {
               setSelectedCategory(localCategory);
               navigate("shop");
@@ -112,9 +112,9 @@ export default function NewPlants() {
       {/* Product Grid */}
       {filteredProducts.length === 0 ? (
         <div className="py-20 text-center bg-white rounded-2xl border border-primary/5 shadow-inner">
-          <ShoppingBag className="w-12 h-12 text-primary/30 mx-auto mb-4" />
+          <ShoppingBag className="w-12 h-12 text-primary/70 mx-auto mb-4" />
           <p className="font-display text-lg font-bold text-primary/70">Aucune succulente ne correspond à votre recherche</p>
-          <p className="text-sm text-primary/50 mt-1">Essayez un autre mot-clé ou changez de catégorie filtre.</p>
+          <p className="text-sm text-primary/70 mt-1">Essayez un autre mot-clé ou changez de catégorie filtre.</p>
         </div>
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -138,7 +138,7 @@ export default function NewPlants() {
                   />
 
                   {/* Badges / Overlay UI */}
-                  <div className="absolute top-3 left-3 flex flex-col gap-1.5 items-start">
+                  <div className="absolute top-3 left-3 flex flex-col gap-2 min-w-[44px] min-h-[44px] items-start">
                     <span className="px-2.5 py-1 text-[9px] uppercase font-bold tracking-wider bg-primary text-white rounded-full">
                       {plant.care.difficulty}
                     </span>
@@ -150,7 +150,7 @@ export default function NewPlants() {
                   </div>
 
                   {/* Wishlist Button */}
-                  <button
+                  <button aria-label="Bouton d'action"
                     onClick={(e) => toggleFavorite(plant.id, e)}
                     className="absolute top-3 right-3 p-2 rounded-full bg-white/80 backdrop-blur-md text-primary hover:text-red-500 shadow-md transition-all cursor-pointer"
                   >
@@ -159,7 +159,7 @@ export default function NewPlants() {
 
                   {/* Zoom Hint */}
                   <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                    <span className="px-4 py-2 bg-white/95 text-primary rounded-full text-xs font-bold tracking-wider uppercase flex items-center gap-1.5 shadow-md">
+                    <span className="px-4 py-2 bg-white/95 text-primary rounded-full text-xs font-bold tracking-wider uppercase flex items-center gap-2 min-w-[44px] min-h-[44px] shadow-md">
                       <ZoomIn className="w-3.5 h-3.5" />
                       Voir détails
                     </span>
@@ -175,7 +175,7 @@ export default function NewPlants() {
                         <Star className="w-3.5 h-3.5 fill-current" />
                       </div>
                       <span className="text-[11px] font-bold text-primary">{plant.rating}</span>
-                      <span className="text-[10px] text-primary/40">({plant.reviewsCount})</span>
+                      <span className="text-[10px] text-primary/70">({plant.reviewsCount})</span>
                     </div>
 
                     <h3 className="font-sans font-bold text-lg text-primary mt-1 leading-tight group-hover:text-accent transition-colors">
@@ -187,17 +187,17 @@ export default function NewPlants() {
 
                     {/* Care Details & Origin */}
                     <div className="mt-4 pt-3.5 border-t border-primary/5 space-y-2 text-xs">
-                      <div className="flex items-center gap-1.5 text-primary/80">
+                      <div className="flex items-center gap-2 min-w-[44px] min-h-[44px] text-primary/80">
                         <MapPin className="w-3.5 h-3.5 text-accent flex-shrink-0" />
                         <span className="font-medium text-primary/90">Origine :</span>
                         <span className="text-primary/70 line-clamp-1">{plant.origin}</span>
                       </div>
-                      <div className="flex items-center gap-1.5 text-primary/80">
+                      <div className="flex items-center gap-2 min-w-[44px] min-h-[44px] text-primary/80">
                         <Sun className="w-3.5 h-3.5 text-gold flex-shrink-0" />
                         <span className="font-medium text-primary/90">Lumière :</span>
                         <span className="text-primary/70 line-clamp-1">{plant.care.light}</span>
                       </div>
-                      <div className="flex items-center gap-1.5 text-primary/80">
+                      <div className="flex items-center gap-2 min-w-[44px] min-h-[44px] text-primary/80">
                         <Droplet className="w-3.5 h-3.5 text-blue-400 flex-shrink-0" />
                         <span className="font-medium text-primary/90">Eau :</span>
                         <span className="text-primary/70 line-clamp-1">{plant.care.water}</span>
@@ -208,14 +208,14 @@ export default function NewPlants() {
                   {/* Pricing and Action row */}
                   <div className="flex items-center justify-between mt-5 pt-4 border-t border-primary/5">
                     <div className="flex flex-col">
-                      <span className="text-[10px] uppercase tracking-wider text-primary/40">Tarif unique</span>
+                      <span className="text-[10px] uppercase tracking-wider text-primary/70">Tarif unique</span>
                       <span className="font-sans font-extrabold text-lg text-primary">
                         {plant.price.toFixed(2)} €
                       </span>
                     </div>
 
                     {/* Dynamic add button to match the dark circular button with arrow/plus */}
-                    <button
+                    <button aria-label="Bouton d'action"
                       onClick={(e) => handleQuickAdd(plant, e)}
                       className={`relative p-3.5 rounded-full transition-all duration-300 shadow-md flex items-center justify-center cursor-pointer ${
                         isJustAdded

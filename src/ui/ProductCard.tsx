@@ -46,7 +46,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
         />
 
         {/* Badges / Overlay UI */}
-        <div className="absolute top-3 left-3 flex flex-col gap-1.5 items-start">
+        <div className="absolute top-3 left-3 flex flex-col gap-2 min-w-[44px] min-h-[44px] items-start">
           <Badge variant="default">{plant.care.difficulty}</Badge>
           {plant.rating === 5 && (
             <Badge variant="gold">Coup de cœur</Badge>
@@ -55,7 +55,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
 
         {/* Wishlist Button */}
         {onToggleFavorite && (
-          <button
+          <button aria-label="Bouton d'action"
             onClick={(e) => onToggleFavorite(plant.id, e)}
             className="absolute top-3 right-3 p-2 rounded-full bg-white/80 backdrop-blur-md text-primary hover:text-red-500 shadow-md transition-all cursor-pointer"
             aria-label={isFavorite ? "Retirer des favoris" : "Ajouter aux favoris"}
@@ -66,7 +66,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
 
         {/* Zoom Hint */}
         <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-          <span className="px-4 py-2 bg-white/95 text-primary rounded-full text-xs font-bold tracking-wider uppercase flex items-center gap-1.5 shadow-md">
+          <span className="px-4 py-2 bg-white/95 text-primary rounded-full text-xs font-bold tracking-wider uppercase flex items-center gap-2 min-w-[44px] min-h-[44px] shadow-md">
             <ZoomIn className="w-3.5 h-3.5" />
             Voir détails
           </span>
@@ -82,7 +82,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
               <Star className="w-3.5 h-3.5 fill-current" />
             </div>
             <span className="text-[11px] font-bold text-primary">{plant.rating}</span>
-            <span className="text-[10px] text-primary/40">({plant.reviewsCount})</span>
+            <span className="text-[10px] text-primary/70">({plant.reviewsCount})</span>
           </div>
 
           <h3 className="font-sans font-bold text-lg text-primary mt-1 leading-tight group-hover:text-accent transition-colors">
@@ -94,17 +94,17 @@ export const ProductCard: React.FC<ProductCardProps> = ({
 
           {/* Care Details & Origin */}
           <div className="mt-4 pt-3.5 border-t border-primary/5 space-y-2 text-xs">
-            <div className="flex items-center gap-1.5 text-primary/80">
+            <div className="flex items-center gap-2 min-w-[44px] min-h-[44px] text-primary/80">
               <MapPin className="w-3.5 h-3.5 text-accent flex-shrink-0" />
               <span className="font-medium text-primary/90">Origine :</span>
               <span className="text-primary/70 line-clamp-1">{plant.origin}</span>
             </div>
-            <div className="flex items-center gap-1.5 text-primary/80">
+            <div className="flex items-center gap-2 min-w-[44px] min-h-[44px] text-primary/80">
               <Sun className="w-3.5 h-3.5 text-gold flex-shrink-0" />
               <span className="font-medium text-primary/90">Lumière :</span>
               <span className="text-primary/70 line-clamp-1">{plant.care.light}</span>
             </div>
-            <div className="flex items-center gap-1.5 text-primary/80">
+            <div className="flex items-center gap-2 min-w-[44px] min-h-[44px] text-primary/80">
               <Droplet className="w-3.5 h-3.5 text-blue-400 flex-shrink-0" />
               <span className="font-medium text-primary/90">Eau :</span>
               <span className="text-primary/70 line-clamp-1">{plant.care.water}</span>
@@ -115,7 +115,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
         {/* Pricing and Action row */}
         <div className="flex items-center justify-between mt-5 pt-4 border-t border-primary/5">
           <div className="flex flex-col">
-            <span className="text-[10px] uppercase tracking-wider text-primary/40">Tarif unique</span>
+            <span className="text-[10px] uppercase tracking-wider text-primary/70">Tarif unique</span>
             <span className="font-sans font-extrabold text-lg text-primary">
               {plant.price.toFixed(2)} €
             </span>

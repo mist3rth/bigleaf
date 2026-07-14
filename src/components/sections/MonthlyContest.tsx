@@ -50,7 +50,7 @@ export default function MonthlyContest() {
 
             <div className="absolute bottom-6 left-6 text-white text-left max-w-xs md:max-w-md lg:hidden">
               <span className="font-mono text-[9px] uppercase tracking-widest text-accent font-bold">Édition Limitée</span>
-              <h4 className="font-display font-black text-xl leading-tight mt-1">Le Tablier de Maître BigLeaf</h4>
+              <h3 className="font-display font-black text-xl leading-tight mt-1">Le Tablier de Maître BigLeaf</h3>
             </div>
           </div>
 
@@ -76,7 +76,7 @@ export default function MonthlyContest() {
               <div className="bg-white/80 p-4 rounded-xl border border-primary/5 flex gap-3.5 items-start">
                 <span className="w-1.5 h-3 bg-[#7A5C43] rounded-xs flex-shrink-0 mt-1" />
                 <div>
-                  <h4 className="font-sans font-bold text-xs uppercase tracking-wide text-primary">Toile de Coton Ciré</h4>
+                  <h3 className="font-sans font-bold text-xs uppercase tracking-wide text-primary">Toile de Coton Ciré</h3>
                   <p className="text-[11px] text-primary/70 mt-1">Imperméable et ultra-robuste face à la terre et à l'usure du temps.</p>
                 </div>
               </div>
@@ -84,7 +84,7 @@ export default function MonthlyContest() {
               <div className="bg-white/80 p-4 rounded-xl border border-primary/5 flex gap-3.5 items-start">
                 <span className="w-1.5 h-3 bg-[#7A5C43] rounded-xs flex-shrink-0 mt-1" />
                 <div>
-                  <h4 className="font-sans font-bold text-xs uppercase tracking-wide text-primary">Lanières en Tissu</h4>
+                  <h3 className="font-sans font-bold text-xs uppercase tracking-wide text-primary">Lanières en Tissu</h3>
                   <p className="text-[11px] text-primary/70 mt-1">Lanières en tissu robuste ajustable pour un confort de travail absolu.</p>
                 </div>
               </div>
@@ -92,7 +92,7 @@ export default function MonthlyContest() {
               <div className="bg-white/80 p-4 rounded-xl border border-primary/5 flex gap-3.5 items-start">
                 <span className="w-1.5 h-3 bg-[#7A5C43] rounded-xs flex-shrink-0 mt-1" />
                 <div>
-                  <h4 className="font-sans font-bold text-xs uppercase tracking-wide text-primary font-bold">Poches d'Artisan</h4>
+                  <h3 className="font-sans font-bold text-xs uppercase tracking-wide text-primary font-bold">Poches d'Artisan</h3>
                   <p className="text-[11px] text-primary/70 mt-1">Multiples compartiments renforcés pour vos cisailles, pelles et vaporisateurs.</p>
                 </div>
               </div>
@@ -100,7 +100,7 @@ export default function MonthlyContest() {
               <div className="bg-white/80 p-4 rounded-xl border border-primary/5 flex gap-3.5 items-start">
                 <span className="w-1.5 h-3 bg-[#7A5C43] rounded-xs flex-shrink-0 mt-1" />
                 <div>
-                  <h4 className="font-sans font-bold text-xs uppercase tracking-wide text-primary">Logo Brodé Main</h4>
+                  <h3 className="font-sans font-bold text-xs uppercase tracking-wide text-primary">Logo Brodé Main</h3>
                   <p className="text-[11px] text-primary/70 mt-1">Notre emblématique feuille BigLeaf finement brodée sur le plastron.</p>
                 </div>
               </div>
@@ -125,7 +125,7 @@ export default function MonthlyContest() {
                     </div>
                     <div className="mt-2 text-left px-1">
                       <p className="font-sans font-bold text-xs text-primary">{winner.name}</p>
-                      <p className="font-mono text-[9px] text-primary/40 uppercase mt-0.5">{winner.month}</p>
+                      <p className="font-mono text-[9px] text-primary/70 uppercase mt-0.5">{winner.month}</p>
                     </div>
                   </div>
                 ))}

@@ -78,7 +78,7 @@ export const Button = React.forwardRef<HTMLButtonElement | HTMLAnchorElement, Bu
     }
 
     return (
-      <button
+      <button aria-label="Bouton d'action"
         ref={ref as React.Ref<HTMLButtonElement>}
         className={`${combinedClassName} group`}
         disabled={isLoading || props.disabled}

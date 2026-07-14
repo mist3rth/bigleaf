@@ -93,16 +93,16 @@ export default function Header() {
             Boutique
           </a>
           
-          <button
+          <button aria-label="Bouton d'action"
             onClick={onOpenQuiz}
-            className="px-4.5 py-2.5 rounded-full text-primary/80 font-sans font-bold text-[11px] uppercase tracking-wider hover:bg-secondary transition-all flex items-center gap-1.5 cursor-pointer"
+            className="px-4.5 py-2.5 rounded-full text-primary/80 font-sans font-bold text-[11px] uppercase tracking-wider hover:bg-secondary transition-all flex items-center gap-2 min-w-[44px] min-h-[44px] cursor-pointer"
             id="nav-quiz"
           >
             <HelpCircle className="w-4 h-4 text-accent" />
             Trouver ma plante
           </button>
 
-          <button
+          <button aria-label="Bouton d'action"
             onClick={onGoTeam}
             className={`px-4.5 py-2.5 rounded-full font-sans text-[11px] uppercase tracking-wider transition-all cursor-pointer ${currentView === 'team' ? 'bg-accent/10 text-accent font-extrabold' : 'text-primary/80 font-bold hover:bg-secondary'}`}
             id="nav-team"
@@ -110,7 +110,7 @@ export default function Header() {
             La team
           </button>
           
-          <button
+          <button aria-label="Bouton d'action"
             onClick={(e) => {
               e.preventDefault();
               onGoFaq();
@@ -125,7 +125,7 @@ export default function Header() {
         {/* Right side: Search & Cart & Mobile Menu */}
         <div className="flex items-center space-x-2.5">
           {/* Search Trigger */}
-          <button
+          <button aria-label="Bouton d'action"
             onClick={() => setIsSearchOverlayOpen(true)}
             className="p-2.5 rounded-full bg-secondary text-primary hover:bg-primary hover:text-white transition-all cursor-pointer flex items-center justify-center border border-primary/5 shadow-sm"
             aria-label="Rechercher"
@@ -143,13 +143,13 @@ export default function Header() {
           >
             <ShoppingBag className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-gold" />
             <span className="hidden sm:inline">Panier</span>
-            <span className={`absolute -top-1.5 -right-1.5 bg-gold text-primary font-bold text-[10px] w-5 h-5 flex items-center justify-center rounded-full border-2 border-[#FDFDFD] shadow-md transition-all duration-300 ${cartCount > 0 ? 'opacity-100 scale-100' : 'opacity-0 scale-50'}`}>
+            <span className={`absolute -top-2 min-w-[44px] min-h-[44px] -right-1.5 bg-gold text-primary font-bold text-[10px] w-5 h-5 flex items-center justify-center rounded-full border-2 border-[#FDFDFD] shadow-md transition-all duration-300 ${cartCount > 0 ? 'opacity-100 scale-100' : 'opacity-0 scale-50'}`}>
               {cartCount || 0}
             </span>
           </button>
 
           {/* Mobile hamburger button */}
-          <button
+          <button aria-label="Bouton d'action"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="md:hidden p-2.5 rounded-full bg-secondary text-primary hover:bg-primary hover:text-white transition-all cursor-pointer border border-primary/5"
             aria-label="Menu"
@@ -186,17 +186,17 @@ export default function Header() {
           >
             Boutique
           </a>
-          <button
+          <button aria-label="Bouton d'action"
             onClick={() => {
               setMobileMenuOpen(false);
               onOpenQuiz();
             }}
-            className="px-4 py-3 rounded-xl border border-primary/5 hover:bg-secondary text-primary text-center font-bold text-sm transition-all flex items-center justify-center gap-1.5 cursor-pointer"
+            className="px-4 py-3 rounded-xl border border-primary/5 hover:bg-secondary text-primary text-center font-bold text-sm transition-all flex items-center justify-center gap-2 min-w-[44px] min-h-[44px] cursor-pointer"
           >
             <HelpCircle className="w-4 h-4 text-accent" />
             Trouver ma plante
           </button>
-          <button
+          <button aria-label="Bouton d'action"
             onClick={() => {
               setMobileMenuOpen(false);
               onGoTeam();
@@ -205,7 +205,7 @@ export default function Header() {
           >
             La team
           </button>
-          <button
+          <button aria-label="Bouton d'action"
             onClick={() => {
               setMobileMenuOpen(false);
               onGoFaq();

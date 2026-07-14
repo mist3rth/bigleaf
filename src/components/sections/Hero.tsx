@@ -96,7 +96,7 @@ export default function Hero() {
             </div>
           </div>
           <div className="flex flex-col text-left flex-grow">
-            <span className="font-display font-extrabold text-xl leading-none text-white flex items-center gap-1 group-hover:text-gold transition-colors">
+            <span className="font-display font-extrabold text-xl leading-none text-white flex items-center gap-2 min-w-[44px] min-h-[44px] group-hover:text-gold transition-colors">
               Jeu Concours
               <ChevronRight className="w-4 h-4 transition-transform group-hover:translate-x-1 flex-shrink-0" />
             </span>

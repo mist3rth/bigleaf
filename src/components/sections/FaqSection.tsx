@@ -21,7 +21,7 @@ export default function FaqSection() {
         <h2 className="font-display font-bold text-3xl md:text-4xl tracking-tight text-primary uppercase leading-tight">
           Questions Fréquentes<span className="text-accent">.</span>
         </h2>
-        <p className="text-xs text-primary/50 font-mono tracking-widest uppercase mt-3 flex items-center justify-center gap-1.5">
+        <p className="text-xs text-primary/70 font-mono tracking-widest uppercase mt-3 flex items-center justify-center gap-1.5">
           <HelpCircle className="w-4 h-4 text-accent" />
           Besoin d'aide ?
         </p>
@@ -38,7 +38,7 @@ export default function FaqSection() {
               className="bg-secondary/40 border border-primary/10 rounded-2xl overflow-hidden transition-all duration-300"
             >
               {/* Question Header */}
-              <button
+              <button aria-label="Bouton d'action"
                 onClick={() => handleToggle(index)}
                 className="w-full flex items-center justify-between p-6 md:p-8 focus:outline-none cursor-pointer group"
               >

@@ -34,7 +34,7 @@ export default function HeroBanner() {
             {/* Absolute overlay elements */}
             <div className="absolute inset-0 bg-primary/10 group-hover:bg-primary/5 transition-colors" />
             
-            <button 
+            <button aria-label="Bouton d'action" 
               onClick={() => setIsPlaying(!isPlaying)}
               className="absolute right-4 bottom-4 w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center shadow-lg hover:bg-gold hover:text-primary hover:scale-105 transition-all cursor-pointer"
               aria-label="Lancer la vidéo"

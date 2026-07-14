@@ -32,7 +32,7 @@ export default function Footer() {
             <h3 className="font-display font-extrabold text-xl sm:text-5xl md:text-6xl tracking-tight leading-none uppercase break-words hyphens-auto">
               Rejoindre la communauté<span className="text-gold">.</span>
             </h3>
-            <p className="text-[10px] sm:text-xs text-white/50 font-mono tracking-widest uppercase mt-3 truncate sm:whitespace-normal">
+            <p className="text-[10px] sm:text-xs text-white/70 font-mono tracking-widest uppercase mt-3 truncate sm:whitespace-normal">
               Newsletter & Conseils exclusifs
             </p>
           </div>
@@ -78,7 +78,7 @@ export default function Footer() {
       {/* Directory structure & copyright links */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-8 text-left text-[10px] sm:text-xs mb-12">
         <div>
-          <h4 className="font-display font-bold uppercase text-white/50 mb-4 tracking-wider">Acheter</h4>
+          <h4 className="font-display font-bold uppercase text-white/70 mb-4 tracking-wider">Acheter</h4>
           <ul className="space-y-2 text-white/80 font-sans">
             <li><a href="#boutique" className="hover:text-gold hover:underline">Toutes les succulentes</a></li>
             <li><a href="#boutique" className="hover:text-gold hover:underline">Cactus graphiques</a></li>
@@ -87,7 +87,7 @@ export default function Footer() {
           </ul>
         </div>
         <div>
-          <h4 className="font-display font-bold uppercase text-white/50 mb-4 tracking-wider">L'Atelier</h4>
+          <h4 className="font-display font-bold uppercase text-white/70 mb-4 tracking-wider">L'Atelier</h4>
           <ul className="space-y-2 text-white/80 font-sans">
             <li><a href="#curated-section" className="hover:text-gold hover:underline">Nos serres de culture</a></li>
             <li><a href="#curated-section" className="hover:text-gold hover:underline">Notre charte éthique</a></li>
@@ -96,7 +96,7 @@ export default function Footer() {
           </ul>
         </div>
         <div>
-          <h4 className="font-display font-bold uppercase text-white/50 mb-4 tracking-wider">Services</h4>
+          <h4 className="font-display font-bold uppercase text-white/70 mb-4 tracking-wider">Services</h4>
           <ul className="space-y-2 text-white/80 font-sans">
             <li><a href="#faq" className="hover:text-gold hover:underline">Livraison Isotherme</a></li>
             <li><a href="#faq" className="hover:text-gold hover:underline">Click & Collect 2h</a></li>
@@ -105,7 +105,7 @@ export default function Footer() {
           </ul>
         </div>
         <div>
-          <h4 className="font-display font-bold uppercase text-white/50 mb-4 tracking-wider">Nous Contacter</h4>
+          <h4 className="font-display font-bold uppercase text-white/70 mb-4 tracking-wider">Nous Contacter</h4>
           <p className="text-white/80 font-sans leading-normal mb-2">
             La Serre Parisienne <br />
             14 Rue de l'Échevéria, 75011 Paris
@@ -117,10 +117,10 @@ export default function Footer() {
       </div>
 
       {/* Brand logo & copyright only */}
-      <div className="flex flex-col sm:flex-row items-center justify-between pt-8 border-t border-white/5 text-white/40 text-[11px] font-sans">
+      <div className="flex flex-col sm:flex-row items-center justify-between pt-8 border-t border-white/5 text-white/70 text-[11px] font-sans">
         <div className="flex flex-col sm:flex-row items-center gap-2 mb-4 sm:mb-0 text-center sm:text-left min-w-0">
           <span className="font-display font-bold uppercase tracking-widest text-white/60">BigLeaf.</span>
-          <span className="flex flex-wrap justify-center items-center gap-1 sm:gap-2">
+          <span className="flex flex-wrap justify-center items-center gap-2 min-w-[44px] min-h-[44px] sm:gap-2">
             &copy; {new Date().getFullYear()} - Tous droits réservés.
             <span className="hidden sm:inline">|</span>
           </span>
@@ -129,7 +129,7 @@ export default function Footer() {
           </span>
         </div>
 
-        <button 
+        <button aria-label="Bouton d'action" 
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           className="p-3 rounded-full bg-white/5 border border-white/10 text-white/60 hover:text-gold hover:border-gold hover:bg-white/10 transition-all cursor-pointer flex items-center justify-center"
           aria-label="Retour en haut"

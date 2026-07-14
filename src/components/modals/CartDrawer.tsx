@@ -61,7 +61,7 @@ export default function CartDrawer() {
           </div>
           <button
             onClick={onClose}
-            className="p-1.5 bg-secondary hover:bg-primary hover:text-white rounded-full transition-all cursor-pointer text-primary"
+            className="p-2 min-w-[44px] min-h-[44px] bg-secondary hover:bg-primary hover:text-white rounded-full transition-all cursor-pointer text-primary"
             aria-label="Fermer le panier"
           >
             <X className="w-5 h-5" />
@@ -97,10 +97,10 @@ export default function CartDrawer() {
               {/* Cart List */}
               {cartItems.length === 0 ? (
                 <div className="py-24 text-center">
-                  <ShoppingBag className="w-14 h-14 text-primary/30 mx-auto mb-4" />
+                  <ShoppingBag className="w-14 h-14 text-primary/70 mx-auto mb-4" />
                   <p className="font-display text-lg font-bold text-primary/70">Votre panier est vide</p>
-                  <p className="text-xs text-primary/50 mt-1 max-w-xs mx-auto">Parcourez notre collection et ajoutez des succulentes d'exception pour commencer.</p>
-                  <button
+                  <p className="text-xs text-primary/70 mt-1 max-w-xs mx-auto">Parcourez notre collection et ajoutez des succulentes d'exception pour commencer.</p>
+                  <button aria-label="Bouton d'action"
                     onClick={onClose}
                     className="mt-6 px-6 py-2.5 bg-primary text-white font-bold text-xs uppercase tracking-wider rounded-full hover:bg-accent transition-all cursor-pointer"
                   >
@@ -129,15 +129,15 @@ export default function CartDrawer() {
                         <h3 className="font-display font-bold text-sm text-primary uppercase leading-none truncate">
                           {item.plant.name}
                         </h3>
-                        <span className="text-[10px] font-mono text-primary/40 mt-1">
+                        <span className="text-[10px] font-mono text-primary/70 mt-1">
                           {item.plant.scientificName}
                         </span>
 
                         {/* Controls */}
                         <div className="flex items-center space-x-2.5 mt-2.5">
-                          <button
+                          <button aria-label="Bouton d'action"
                             onClick={() => onUpdateQuantity(item.plant.id, item.quantity - 1)}
-                            className="p-1 rounded-full bg-white hover:bg-primary hover:text-white text-primary border border-primary/5 transition-all cursor-pointer"
+                            className="p-2 min-w-[44px] min-h-[44px] rounded-full bg-white hover:bg-primary hover:text-white text-primary border border-primary/5 transition-all cursor-pointer"
                             aria-label="Diminuer"
                           >
                             <Minus className="w-3 h-3" />
@@ -145,9 +145,9 @@ export default function CartDrawer() {
                           <span className="text-xs font-bold text-primary w-4 text-center">
                             {item.quantity}
                           </span>
-                          <button
+                          <button aria-label="Bouton d'action"
                             onClick={() => onUpdateQuantity(item.plant.id, item.quantity + 1)}
-                            className="p-1 rounded-full bg-white hover:bg-primary hover:text-white text-primary border border-primary/5 transition-all cursor-pointer"
+                            className="p-2 min-w-[44px] min-h-[44px] rounded-full bg-white hover:bg-primary hover:text-white text-primary border border-primary/5 transition-all cursor-pointer"
                             aria-label="Augmenter"
                           >
                             <Plus className="w-3 h-3" />
@@ -157,9 +157,9 @@ export default function CartDrawer() {
 
                       {/* Price & Delete Row */}
                       <div className="flex flex-col items-end justify-between self-stretch py-0.5">
-                        <button
+                        <button aria-label="Bouton d'action"
                           onClick={() => onRemoveItem(item.plant.id)}
-                          className="text-primary/40 hover:text-red-500 transition-colors p-1"
+                          className="text-primary/70 hover:text-red-500 transition-colors p-1"
                           aria-label="Supprimer"
                         >
                           <Trash2 className="w-4 h-4" />
@@ -178,7 +178,7 @@ export default function CartDrawer() {
           {checkoutStep === 'form' && (
             <form onSubmit={handleCheckoutSubmit} className="space-y-4 text-left p-1">
               <div className="bg-secondary/40 p-4 rounded-xl mb-4 border border-primary/5">
-                <p className="text-xs text-primary/70 font-sans leading-relaxed flex items-center gap-1.5 font-medium">
+                <p className="text-xs text-primary/70 font-sans leading-relaxed flex items-center gap-2 min-w-[44px] min-h-[44px] font-medium">
                   <Gift className="w-4 h-4 text-accent" />
                   Vos succulentes seront rempotées à la commande dans notre terreau artisanal.
                 </p>
@@ -245,7 +245,7 @@ export default function CartDrawer() {
                 />
               </div>
               
-              <button
+              <button aria-label="Bouton d'action"
                 type="submit"
                 className="hidden"
                 id="hidden-submit-form"
@@ -259,7 +259,7 @@ export default function CartDrawer() {
               <h2 className="font-display font-extrabold text-2xl text-primary uppercase">
                 Merci pour votre commande !
               </h2>
-              <p className="text-xs text-primary/50 mt-1 font-mono">ID de Commande: #GRW-{Math.floor(100000 + Math.random() * 900000)}</p>
+              <p className="text-xs text-primary/70 mt-1 font-mono">ID de Commande: #GRW-{Math.floor(100000 + Math.random() * 900000)}</p>
 
               <div className="bg-secondary/40 rounded-2xl p-5 my-6 text-left border border-primary/5 text-xs text-primary/80 leading-relaxed font-sans space-y-3">
                 <p>
@@ -307,7 +307,7 @@ export default function CartDrawer() {
 
             {/* Main Action Trigger */}
             {checkoutStep === 'cart' ? (
-              <button
+              <button aria-label="Bouton d'action"
                 onClick={() => setCheckoutStep('form')}
                 className="w-full py-4.5 bg-primary hover:bg-accent text-white font-sans font-bold text-xs uppercase tracking-widest rounded-full transition-all duration-300 shadow-lg flex items-center justify-center space-x-2 cursor-pointer"
               >
@@ -316,14 +316,14 @@ export default function CartDrawer() {
               </button>
             ) : (
               <div className="flex gap-3">
-                <button
+                <button aria-label="Bouton d'action"
                   type="button"
                   onClick={() => setCheckoutStep('cart')}
                   className="w-1/3 py-4 bg-secondary hover:bg-primary/5 text-primary font-sans font-bold text-xs uppercase tracking-wider rounded-full transition-all border border-primary/10 cursor-pointer"
                 >
                   Retour
                 </button>
-                <button
+                <button aria-label="Bouton d'action"
                   type="button"
                   onClick={() => {
                     const btn = document.getElementById('hidden-submit-form');
@@ -342,7 +342,7 @@ export default function CartDrawer() {
 
         {checkoutStep === 'success' && (
           <div className="pt-4 border-t border-primary/10 mt-4">
-            <button
+            <button aria-label="Bouton d'action"
               onClick={handleCompleteOrder}
               className="w-full py-4.5 bg-primary hover:bg-accent text-white font-sans font-bold text-xs uppercase tracking-widest rounded-full transition-all shadow-lg cursor-pointer"
             >

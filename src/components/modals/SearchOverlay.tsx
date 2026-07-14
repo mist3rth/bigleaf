@@ -86,12 +86,12 @@ export default function SearchOverlay({ isOpen, onClose, onSearch, onOpenQuiz, o
             className="w-full bg-white/5 border-b-2 border-white/20 focus:border-gold py-4 sm:py-5 pl-10 sm:pl-12 pr-10 sm:pr-12 text-xl sm:text-2xl md:text-4xl text-white placeholder-white/20 font-display font-light focus:outline-none transition-all"
             autoFocus
           />
-          <Search className="absolute left-2 top-1/2 -translate-y-1/2 w-7 h-7 text-white/30" />
+          <Search className="absolute left-2 top-1/2 -translate-y-1/2 w-7 h-7 text-white/70" />
           {query && (
-            <button
+            <button aria-label="Bouton d'action"
               type="button"
               onClick={() => setQuery('')}
-              className="absolute right-2 top-1/2 -translate-y-1/2 text-white/50 hover:text-white"
+              className="absolute right-2 top-1/2 -translate-y-1/2 text-white/70 hover:text-white"
             >
               Effacer
             </button>
@@ -100,9 +100,9 @@ export default function SearchOverlay({ isOpen, onClose, onSearch, onOpenQuiz, o
 
         {/* Popular Tags Quick Navigation */}
         <div className="flex flex-wrap gap-2 mb-12 items-center">
-          <span className="text-[10px] uppercase font-mono tracking-wider text-white/40 mr-2">Recherches fréquentes :</span>
+          <span className="text-[10px] uppercase font-mono tracking-wider text-white/70 mr-2">Recherches fréquentes :</span>
           {['Echeveria', 'Cactus d\'Extérieur', 'Rare', 'Débutant', 'Collier de perles'].map(tag => (
-            <button
+            <button aria-label="Bouton d'action"
               key={tag}
               onClick={() => handlePopularTagClick(tag)}
               className="px-3.5 py-1.5 rounded-full bg-white/5 hover:bg-gold hover:text-primary border border-white/5 text-xs font-medium transition-all cursor-pointer"
@@ -120,7 +120,7 @@ export default function SearchOverlay({ isOpen, onClose, onSearch, onOpenQuiz, o
             </h2>
             
             {filteredResults.length === 0 ? (
-              <p className="text-sm text-white/50 italic py-4">
+              <p className="text-sm text-white/70 italic py-4">
                 Aucun résultat correspondant pour "{query}". Essayez un autre mot-clé ou consultez nos suggestions ci-dessous.
               </p>
             ) : (
@@ -229,12 +229,12 @@ export default function SearchOverlay({ isOpen, onClose, onSearch, onOpenQuiz, o
       <div className="max-w-screen-2xl mx-auto w-full px-6 py-8 md:px-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-left">
         <div>
           <h2 className="font-display font-bold text-sm text-white">Besoin d'un diagnostic personnalisé ?</h2>
-          <p className="text-xs text-white/50">Trouvez la succulente idéale adaptée à votre exposition et votre rythme de vie.</p>
+          <p className="text-xs text-white/70">Trouvez la succulente idéale adaptée à votre exposition et votre rythme de vie.</p>
         </div>
         
         <div className="flex gap-3 w-full sm:w-auto">
           {/* Direct CTA 1: Open Quiz */}
-          <button
+          <button aria-label="Bouton d'action"
             onClick={() => {
               onClose();
               onOpenQuiz();
@@ -246,7 +246,7 @@ export default function SearchOverlay({ isOpen, onClose, onSearch, onOpenQuiz, o
           </button>
 
           {/* Direct CTA 2: Scroll to interior collection */}
-          <button
+          <button aria-label="Bouton d'action"
             onClick={() => {
               onClose();
               const el = document.getElementById('indoor-collection');
