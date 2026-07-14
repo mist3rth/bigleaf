@@ -23,7 +23,7 @@ const LoadingFallback = () => (
 
 export default function App() {
   // On extrait STRICTEMENT ce dont App a besoin pour limiter les re-renders inutiles
-  const { currentView, selectedPlant } = useUI();
+  const { currentView, selectedPlant, isCartOpen, isQuizOpen } = useUI();
 
   useEffect(() => {
     log.dev('App mounted, currentView:', currentView);
@@ -65,8 +65,8 @@ export default function App() {
 
       {/* Modals chargées uniquement à la demande */}
       <Suspense fallback={null}>
-        <CartDrawer />
-        <CareQuiz />
+        {isCartOpen && <CartDrawer />}
+        {isQuizOpen && <CareQuiz />}
       </Suspense>
     </div>
   );

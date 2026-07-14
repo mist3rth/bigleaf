@@ -219,13 +219,15 @@ export default function Header() {
 
       {/* Full screen Search Overlay with Pushes and Advice */}
       <React.Suspense fallback={null}>
-        <SearchOverlay
-          isOpen={isSearchOverlayOpen}
-          onClose={() => setIsSearchOverlayOpen(false)}
-          onSearch={onSearch}
-          onOpenQuiz={onOpenQuiz}
-          onSelectPlant={onSelectPlant}
-        />
+        {isSearchOverlayOpen && (
+          <SearchOverlay
+            isOpen={isSearchOverlayOpen}
+            onClose={() => setIsSearchOverlayOpen(false)}
+            onSearch={onSearch}
+            onOpenQuiz={onOpenQuiz}
+            onSelectPlant={onSelectPlant}
+          />
+        )}
       </React.Suspense>
 
     </header>
