@@ -1,0 +1,6 @@
+{
+  "name": "BigLeaf - Boutique de Succulentes",
+  "description": "Une boutique en ligne d'exception dédiée aux succulentes, cactus et plantes grasses de collection d'intérieur et d'extérieur.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
