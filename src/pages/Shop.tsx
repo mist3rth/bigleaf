@@ -430,17 +430,17 @@ export default function ProductListPage() {
                         <div className="mt-4 pt-3.5 border-t border-primary/5 space-y-2 text-xs">
                           <div className="flex items-center gap-1.5 text-primary/80">
                             <MapPin className="w-3.5 h-3.5 text-accent flex-shrink-0" />
-                            <span className="font-medium text-primary/90">Origine :</span>
+                            <span className="font-medium text-primary/90 whitespace-nowrap">Origine :</span>
                             <span className="text-primary/70 line-clamp-1">{plant.origin}</span>
                           </div>
                           <div className="flex items-center gap-1.5 text-primary/80">
                             <Sun className="w-3.5 h-3.5 text-gold flex-shrink-0" />
-                            <span className="font-medium text-primary/90">Lumière :</span>
+                            <span className="font-medium text-primary/90 whitespace-nowrap">Lumière :</span>
                             <span className="text-primary/70 line-clamp-1">{plant.care.light}</span>
                           </div>
                           <div className="flex items-center gap-1.5 text-primary/80">
                             <Droplet className="w-3.5 h-3.5 text-blue-400 flex-shrink-0" />
-                            <span className="font-medium text-primary/90">Eau :</span>
+                            <span className="font-medium text-primary/90 whitespace-nowrap">Eau :</span>
                             <span className="text-primary/70 line-clamp-1">{plant.care.water}</span>
                           </div>
                         </div>
