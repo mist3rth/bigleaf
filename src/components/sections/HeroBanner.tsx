@@ -10,7 +10,7 @@ export default function HeroBanner() {
       className="max-w-screen-2xl mx-auto px-4 md:px-8 mt-6"
       id="hero-editorial-banner"
     >
-      <div className="bg-[#F4F4F3] text-primary rounded-3xl p-6 md:p-10 flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12 shadow-sm border border-[#E5E5E3]">
+      <div className="bg-[#F4F4F3] text-primary rounded-3xl p-6 md:p-10 flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12 shadow-sm border border-[#E5E5E3]">
         
         {/* Left Column: Bold Title & Subtitle */}
         <div className="flex-1 min-w-[240px] text-left">
