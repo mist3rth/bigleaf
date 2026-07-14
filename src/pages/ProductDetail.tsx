@@ -19,8 +19,6 @@ export default function ProductDetailPage() {
   const onSelectPlant = (p) => setSelectedPlant(p);
   if (!plant) return null;
 
-  const [zoomPos, setZoomPos] = useState({ x: 0, y: 0 });
-  const [isZoomed, setIsZoomed] = useState(false);
   const [favorites, setFavorites] = useState<string[]>([]);
   const [addedId, setAddedId] = useState<string | null>(null);
   const [activeTab, setActiveTab] = useState<'care' | 'details' | 'story'>('care');
@@ -30,12 +28,7 @@ export default function ProductDetailPage() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [plant]);
 
-  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    const { left, top, width, height } = e.currentTarget.getBoundingClientRect();
-    const x = ((e.clientX - left) / width) * 100;
-    const y = ((e.clientY - top) / height) * 100;
-    setZoomPos({ x, y });
-  };
+
 
   const toggleFavorite = (id: string) => {
     if (favorites.includes(id)) {
@@ -118,32 +111,15 @@ export default function ProductDetailPage() {
         {/* LEFT COLUMN: Zoomable Image Showcase */}
         <div className="lg:col-span-6 space-y-4">
           <div 
-            className="relative aspect-square rounded-3xl overflow-hidden bg-secondary border border-primary/5 shadow-premium cursor-zoom-in group"
-            onMouseMove={handleMouseMove}
-            onMouseEnter={() => setIsZoomed(true)}
-            onMouseLeave={() => setIsZoomed(false)}
+            className="relative aspect-square rounded-3xl overflow-hidden bg-secondary border border-primary/5 shadow-premium"
           >
             <img
               src={plant.image}
               alt={plant.name}
-              className="w-full h-full object-cover transition-transform duration-100 ease-out"
-              style={
-                isZoomed
-                  ? {
-                      transformOrigin: `${zoomPos.x}% ${zoomPos.y}%`,
-                      transform: 'scale(2.2)',
-                    }
-                  : undefined
-              }
+              className="w-full h-full object-cover"
               referrerPolicy="no-referrer"
             />
-            
-            {/* Visual Indicator of Zoom availability */}
-            {!isZoomed && (
-              <div className="absolute bottom-4 right-4 bg-primary/90 backdrop-blur-md text-white text-[10px] font-mono tracking-widest uppercase px-3 py-1.5 rounded-full shadow-lg flex items-center gap-1.5 opacity-80 group-hover:opacity-100 transition-opacity">
-                <span>Survolez la photo pour zoomer</span>
-              </div>
-            )}
+
 
             {/* Float badges */}
             <div className="absolute top-4 left-4 flex flex-col gap-2">
