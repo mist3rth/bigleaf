@@ -78,7 +78,7 @@ export default function FeaturedCollections() {
                 <p className="text-xs text-white/70 font-sans mt-3 font-light leading-relaxed max-w-xs">
                   {card.subtitle}
                 </p>
-                <div className="mt-5 inline-flex items-center gap-2 min-w-[44px] min-h-[44px] text-xs font-semibold tracking-wider uppercase text-white/90 group-hover:text-white group-hover:underline">
+                <div className="mt-5 inline-flex items-center gap-1.5 text-xs font-semibold tracking-wider uppercase text-white/90 group-hover:text-white group-hover:underline">
                   Découvrir la sélection &rarr;
                 </div>
               </div>

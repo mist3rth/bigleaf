@@ -138,7 +138,7 @@ export default function NewPlants() {
                   />
 
                   {/* Badges / Overlay UI */}
-                  <div className="absolute top-3 left-3 flex flex-col gap-2 min-w-[44px] min-h-[44px] items-start">
+                  <div className="absolute top-3 left-3 flex flex-col gap-1.5 items-start">
                     <span className="px-2.5 py-1 text-[9px] uppercase font-bold tracking-wider bg-primary text-white rounded-full">
                       {plant.care.difficulty}
                     </span>
@@ -159,7 +159,7 @@ export default function NewPlants() {
 
                   {/* Zoom Hint */}
                   <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                    <span className="px-4 py-2 bg-white/95 text-primary rounded-full text-xs font-bold tracking-wider uppercase flex items-center gap-2 min-w-[44px] min-h-[44px] shadow-md">
+                    <span className="px-4 py-2 bg-white/95 text-primary rounded-full text-xs font-bold tracking-wider uppercase flex items-center gap-1.5 shadow-md">
                       <ZoomIn className="w-3.5 h-3.5" />
                       Voir détails
                     </span>
@@ -187,17 +187,17 @@ export default function NewPlants() {
 
                     {/* Care Details & Origin */}
                     <div className="mt-4 pt-3.5 border-t border-primary/5 space-y-2 text-xs">
-                      <div className="flex items-center gap-2 min-w-[44px] min-h-[44px] text-primary/80">
+                      <div className="flex items-center gap-1.5 text-primary/80">
                         <MapPin className="w-3.5 h-3.5 text-accent flex-shrink-0" />
                         <span className="font-medium text-primary/90">Origine :</span>
                         <span className="text-primary/70 line-clamp-1">{plant.origin}</span>
                       </div>
-                      <div className="flex items-center gap-2 min-w-[44px] min-h-[44px] text-primary/80">
+                      <div className="flex items-center gap-1.5 text-primary/80">
                         <Sun className="w-3.5 h-3.5 text-gold flex-shrink-0" />
                         <span className="font-medium text-primary/90">Lumière :</span>
                         <span className="text-primary/70 line-clamp-1">{plant.care.light}</span>
                       </div>
-                      <div className="flex items-center gap-2 min-w-[44px] min-h-[44px] text-primary/80">
+                      <div className="flex items-center gap-1.5 text-primary/80">
                         <Droplet className="w-3.5 h-3.5 text-blue-400 flex-shrink-0" />
                         <span className="font-medium text-primary/90">Eau :</span>
                         <span className="text-primary/70 line-clamp-1">{plant.care.water}</span>

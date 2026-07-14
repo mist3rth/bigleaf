@@ -178,7 +178,7 @@ export default function CartDrawer() {
           {checkoutStep === 'form' && (
             <form onSubmit={handleCheckoutSubmit} className="space-y-4 text-left p-1">
               <div className="bg-secondary/40 p-4 rounded-xl mb-4 border border-primary/5">
-                <p className="text-xs text-primary/70 font-sans leading-relaxed flex items-center gap-2 min-w-[44px] min-h-[44px] font-medium">
+                <p className="text-xs text-primary/70 font-sans leading-relaxed flex items-center gap-1.5 font-medium">
                   <Gift className="w-4 h-4 text-accent" />
                   Vos succulentes seront rempotées à la commande dans notre terreau artisanal.
                 </p>

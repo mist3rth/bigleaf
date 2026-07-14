@@ -95,7 +95,7 @@ export default function Header() {
           
           <button aria-label="Bouton d'action"
             onClick={onOpenQuiz}
-            className="px-4.5 py-2.5 rounded-full text-primary/80 font-sans font-bold text-[11px] uppercase tracking-wider hover:bg-secondary transition-all flex items-center gap-2 min-w-[44px] min-h-[44px] cursor-pointer"
+            className="px-4.5 py-2.5 rounded-full text-primary/80 font-sans font-bold text-[11px] uppercase tracking-wider hover:bg-secondary transition-all flex items-center gap-1.5 cursor-pointer"
             id="nav-quiz"
           >
             <HelpCircle className="w-4 h-4 text-accent" />
@@ -137,13 +137,13 @@ export default function Header() {
           {/* Cart Drawer Indicator */}
           <button
             onClick={onOpenCart}
-            className="px-3 sm:px-4 py-2 rounded-full bg-primary hover:bg-accent text-white font-sans font-bold text-[10px] sm:text-xs uppercase tracking-wider transition-all flex items-center space-x-1.5 sm:space-x-2 cursor-pointer relative shadow-md"
+            className="p-2.5 sm:p-3 rounded-full bg-primary hover:bg-accent text-white transition-all flex items-center justify-center cursor-pointer relative shadow-md"
             id="header-cart"
             aria-label="Panier"
           >
             <ShoppingBag className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-gold" />
-            <span className="hidden sm:inline">Panier</span>
-            <span className={`absolute -top-2 min-w-[44px] min-h-[44px] -right-1.5 bg-gold text-primary font-bold text-[10px] w-5 h-5 flex items-center justify-center rounded-full border-2 border-[#FDFDFD] shadow-md transition-all duration-300 ${cartCount > 0 ? 'opacity-100 scale-100' : 'opacity-0 scale-50'}`}>
+            
+            <span className={`absolute -top-1.5 -right-1.5 bg-gold text-primary font-bold text-[10px] w-5 h-5 flex items-center justify-center rounded-full border-2 border-[#FDFDFD] shadow-md transition-all duration-300 ${cartCount > 0 ? 'opacity-100 scale-100' : 'opacity-0 scale-50'}`}>
               {cartCount || 0}
             </span>
           </button>
@@ -191,7 +191,7 @@ export default function Header() {
               setMobileMenuOpen(false);
               onOpenQuiz();
             }}
-            className="px-4 py-3 rounded-xl border border-primary/5 hover:bg-secondary text-primary text-center font-bold text-sm transition-all flex items-center justify-center gap-2 min-w-[44px] min-h-[44px] cursor-pointer"
+            className="px-4 py-3 rounded-xl border border-primary/5 hover:bg-secondary text-primary text-center font-bold text-sm transition-all flex items-center justify-center gap-1.5 cursor-pointer"
           >
             <HelpCircle className="w-4 h-4 text-accent" />
             Trouver ma plante

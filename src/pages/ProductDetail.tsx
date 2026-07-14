@@ -140,7 +140,7 @@ export default function ProductDetailPage() {
             
             {/* Visual Indicator of Zoom availability */}
             {!isZoomed && (
-              <div className="absolute bottom-4 right-4 bg-primary/90 backdrop-blur-md text-white text-[10px] font-mono tracking-widest uppercase px-3 py-1.5 rounded-full shadow-lg flex items-center gap-2 min-w-[44px] min-h-[44px] opacity-80 group-hover:opacity-100 transition-opacity">
+              <div className="absolute bottom-4 right-4 bg-primary/90 backdrop-blur-md text-white text-[10px] font-mono tracking-widest uppercase px-3 py-1.5 rounded-full shadow-lg flex items-center gap-1.5 opacity-80 group-hover:opacity-100 transition-opacity">
                 <span>Survolez la photo pour zoomer</span>
               </div>
             )}
@@ -430,7 +430,7 @@ export default function ProductDetailPage() {
 
                 <button aria-label="Bouton d'action"
                   onClick={(e) => handleQuickAddCrossSell(companion, e)}
-                  className="w-full mt-4 py-2.5 border border-primary/10 rounded-full hover:bg-primary hover:text-white transition-all text-[10px] font-bold uppercase tracking-wider flex items-center justify-center gap-2 min-w-[44px] min-h-[44px] cursor-pointer"
+                  className="w-full mt-4 py-2.5 border border-primary/10 rounded-full hover:bg-primary hover:text-white transition-all text-[10px] font-bold uppercase tracking-wider flex items-center justify-center gap-1.5 cursor-pointer"
                 >
                   <Plus className="w-3.5 h-3.5" />
                   Ajouter au panier

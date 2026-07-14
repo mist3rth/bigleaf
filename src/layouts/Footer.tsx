@@ -120,7 +120,7 @@ export default function Footer() {
       <div className="flex flex-col sm:flex-row items-center justify-between pt-8 border-t border-white/5 text-white/70 text-[11px] font-sans">
         <div className="flex flex-col sm:flex-row items-center gap-2 mb-4 sm:mb-0 text-center sm:text-left min-w-0">
           <span className="font-display font-bold uppercase tracking-widest text-white/60">BigLeaf.</span>
-          <span className="flex flex-wrap justify-center items-center gap-2 min-w-[44px] min-h-[44px] sm:gap-2">
+          <span className="flex flex-wrap justify-center items-center gap-1.5 sm:gap-2">
             &copy; {new Date().getFullYear()} - Tous droits réservés.
             <span className="hidden sm:inline">|</span>
           </span>

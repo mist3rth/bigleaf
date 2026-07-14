@@ -286,7 +286,7 @@ export default function CareQuiz() {
                   onAddToCart(recommendation);
                   onClose();
                 }}
-                className="w-full sm:w-1/3 py-3.5 bg-primary hover:bg-accent text-white rounded-full text-xs font-bold uppercase tracking-wider transition-all shadow-md flex items-center justify-center gap-2 min-w-[44px] min-h-[44px] cursor-pointer"
+                className="w-full sm:w-1/3 py-3.5 bg-primary hover:bg-accent text-white rounded-full text-xs font-bold uppercase tracking-wider transition-all shadow-md flex items-center justify-center gap-1.5 cursor-pointer"
               >
                 <ShoppingCart className="w-3.5 h-3.5 text-gold" />
                 <span>Acheter</span>
