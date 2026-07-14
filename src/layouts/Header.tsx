@@ -65,7 +65,7 @@ export default function Header() {
         </div>
 
         {/* Center: NAVIGATION LINKS */}
-        <div className="hidden md:flex items-center space-x-1">
+        <div className="hidden min-[800px]:flex items-center space-x-1">
           {/* House icon for Accueil */}
           <a
             href="#"
@@ -151,7 +151,7 @@ export default function Header() {
           {/* Mobile hamburger button */}
           <button aria-label="Bouton d'action"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden p-2.5 rounded-full bg-secondary text-primary hover:bg-primary hover:text-white transition-all cursor-pointer border border-primary/5"
+            className="min-[800px]:hidden p-2.5 rounded-full bg-secondary text-primary hover:bg-primary hover:text-white transition-all cursor-pointer border border-primary/5"
             aria-label="Menu"
           >
             {mobileMenuOpen ? <X className="w-4.5 h-4.5" /> : <Menu className="w-4.5 h-4.5" />}
@@ -162,7 +162,7 @@ export default function Header() {
 
       {/* Mobile Drawer menu */}
       {mobileMenuOpen && (
-        <div className="absolute top-16 sm:top-20 left-2 right-2 sm:left-4 sm:right-4 bg-white/95 backdrop-blur-lg rounded-2xl border border-primary/10 p-4 sm:p-6 flex flex-col space-y-3 md:hidden shadow-2xl z-40">
+        <div className="absolute top-16 sm:top-20 left-2 right-2 sm:left-4 sm:right-4 bg-white/95 backdrop-blur-lg rounded-2xl border border-primary/10 p-4 sm:p-6 flex flex-col space-y-3 min-[800px]:hidden shadow-2xl z-40">
           <a
             href="#"
             onClick={(e) => {
