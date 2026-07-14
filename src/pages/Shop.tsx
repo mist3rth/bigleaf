@@ -58,6 +58,17 @@ export default function ProductListPage() {
     }, 1500);
   };
 
+  // Scroll to results on mobile after filter click
+  const scrollToResults = () => {
+    if (window.innerWidth < 1024) {
+      const el = document.getElementById('product-grid-results');
+      if (el) {
+        const y = el.getBoundingClientRect().top + window.scrollY - 100;
+        window.setTimeout(() => window.scrollTo({ top: y, behavior: 'smooth' }), 50);
+      }
+    }
+  };
+
   // Reset all filters
   const handleReset = () => {
     setSearch('');
@@ -228,6 +239,7 @@ export default function ProductListPage() {
                 onClick={() => {
                   setSelectedCategory('all');
                   setSelectedCollection(null);
+                  scrollToResults();
                 }}
                 className={`w-full text-left px-3.5 py-2 rounded-lg text-xs font-semibold transition-all flex items-center justify-between cursor-pointer ${
                   selectedCategory === 'all' && !selectedCollection
@@ -246,6 +258,7 @@ export default function ProductListPage() {
                     onClick={() => {
                       setSelectedCategory(cat.id);
                       setSelectedCollection(null);
+                      scrollToResults();
                     }}
                     className={`w-full text-left px-3.5 py-2 rounded-lg text-xs font-semibold transition-all flex items-center justify-between cursor-pointer ${
                       isActive 
@@ -274,6 +287,7 @@ export default function ProductListPage() {
                     onClick={(e) => {
                       e.preventDefault();
                       setSelectedDifficulty(diff);
+                      scrollToResults();
                     }}
                     className={`px-3 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-wider border transition-all cursor-pointer ${
                       isActive 
@@ -294,7 +308,7 @@ export default function ProductListPage() {
         </aside>
 
         {/* Right Product Grid (Width: 9/12 on Desktop) */}
-        <section className="lg:col-span-9 space-y-6">
+        <section id="product-grid-results" className="lg:col-span-9 space-y-6">
           
           {/* Active Badges Panel */}
           {activeFiltersCount > 0 && (
