@@ -1,3 +1,4 @@
+import succulent_5Img from '../../assets/succulent_5.webp';
 import { ArrowUpRight } from 'lucide-react';
 import { useUI } from '../../context/UIContext';
 import { useCart } from '../../context/CartContext';
@@ -20,7 +21,7 @@ export default function FeaturedCollections() {
       id: 'pets-friendly',
       title: 'Plantes saines & Pet-Friendly',
       subtitle: 'Sans aucun danger pour vos animaux de compagnie, faciles à vivre.',
-      image: 'https://images.unsplash.com/photo-1545241047-6083a3684587?auto=format&fit=crop&w=600&q=80',
+      image: succulent_5Img,
       badge: 'Non-toxique'
     },
     {

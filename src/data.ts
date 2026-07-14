@@ -1,3 +1,11 @@
+import succulent_1Img from './assets/succulent_1.webp';
+import succulent_2Img from './assets/succulent_2.webp';
+import succulent_3Img from './assets/succulent_3.webp';
+import succulent_4Img from './assets/succulent_4.webp';
+import succulent_5Img from './assets/succulent_5.webp';
+import succulent_6Img from './assets/succulent_6.webp';
+import succulent_7Img from './assets/succulent_7.webp';
+
 import colliersDePerlesImg from '../assets/colliers_de_perles.webp';
 import agaveImg from '../assets/agave.webp';
 import figuierImg from '../assets/figuier.webp';
@@ -82,7 +90,7 @@ export const SUCCULENTS: Succulent[] = [
     reviewsCount: 19,
     category: 'interior',
     categoryLabel: 'Succulentes d\'Intérieur',
-    image: 'https://images.unsplash.com/photo-1596547609652-9cf5d8d76921?auto=format&fit=crop&w=800&q=80',
+    image: succulent_1Img,
     description: 'Plante d\'intérieur dépolluante et extrêmement graphique avec ses feuilles érigées bicolores bordées de jaune vif. Elle résiste à presque toutes les conditions de vie en intérieur.',
     care: {
       light: 'Lumière faible à vive',
@@ -103,7 +111,7 @@ export const SUCCULENTS: Succulent[] = [
     reviewsCount: 14,
     category: 'interior',
     categoryLabel: 'Succulentes d\'Intérieur',
-    image: 'https://images.unsplash.com/photo-1614594975525-e45190c55d0b?auto=format&fit=crop&w=800&q=80',
+    image: succulent_2Img,
     description: 'Une minuscule succulente retombante rare et prisée pour ses petites feuilles rondes arborant de délicats motifs imitant la carapace d\'une tortue de terre.',
     care: {
       light: 'Lumière vive tamisée',
@@ -124,7 +132,7 @@ export const SUCCULENTS: Succulent[] = [
     reviewsCount: 15,
     category: 'exterior',
     categoryLabel: 'Cactus d\'Extérieur',
-    image: 'https://images.unsplash.com/photo-1463936575829-25148e1db1b8?auto=format&fit=crop&w=800&q=80',
+    image: succulent_3Img,
     description: 'Aussi appelée Aloe Faucon, cette plante grasse possède des feuilles triangulaires d\'un vert foncé ornées de bandes transversales blanches très graphiques. Elle produit de magnifiques clochettes orangées au printemps.',
     care: {
       light: 'Lumière vive ou plein soleil',
@@ -145,7 +153,7 @@ export const SUCCULENTS: Succulent[] = [
     reviewsCount: 54,
     category: 'exterior',
     categoryLabel: 'Cactus d\'Extérieur',
-    image: 'https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&w=800&q=80',
+    image: succulent_4Img,
     description: 'L\'une des succulentes les plus rustiques de notre atelier, capable de survivre à des hivers rigoureux sous la neige. Ses rosettes s\'étalent pour former de magnifiques tapis végétaux colorés.',
     care: {
       light: 'Plein soleil d\'extérieur',
@@ -208,7 +216,7 @@ export const SUCCULENTS: Succulent[] = [
     reviewsCount: 29,
     category: 'interior',
     categoryLabel: 'Succulentes d\'Intérieur',
-    image: 'https://images.unsplash.com/photo-1545241047-6083a3684587?auto=format&fit=crop&w=800&q=80',
+    image: succulent_5Img,
     description: 'Aussi appelée "Plante Planche à Laver" en raison des stries régulières sur ses feuilles triangulaires d\'un vert très sombre. C\'est l\'une des plantes grasses les plus robustes qui soient, tolérant très bien la pénombre.',
     care: {
       light: 'Lumière moyenne à vive',
@@ -229,7 +237,7 @@ export const SUCCULENTS: Succulent[] = [
     reviewsCount: 51,
     category: 'interior',
     categoryLabel: 'Succulentes d\'Intérieur',
-    image: 'https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=800&q=80',
+    image: succulent_6Img,
     description: 'Un bonsaï naturel aux petites feuilles charnues et luisantes ourlées de rouge sous le soleil. Surnommée plante de la fortune, elle apporte calme et élégance avec sa silhouette d\'arbre miniature centenaire.',
     care: {
       light: 'Soleil direct ou lumière vive',
@@ -271,7 +279,7 @@ export const SUCCULENTS: Succulent[] = [
     reviewsCount: 23,
     category: 'interior',
     categoryLabel: 'Succulentes d\'Intérieur',
-    image: 'https://images.unsplash.com/photo-1536882240095-0379873feb4e?auto=format&fit=crop&w=800&q=80',
+    image: succulent_7Img,
     description: 'Une fabuleuse cascade de petites feuilles vert-gris charnues superposées en tresses denses. Très facile à cultiver et idéale pour les étagères ou les suspensions.',
     care: {
       light: 'Lumière vive avec un peu de soleil',

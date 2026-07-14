@@ -4,6 +4,7 @@ import { useCart } from '../../context/CartContext';
 import heroBg from '../../hero2.webp';
 import tablierImg from '../../tablier.webp';
 import vigHomeImg from '../../vig-home.webp';
+import succulent_5Img from '../../assets/succulent_5.webp';
 import { useState, useEffect } from 'react';
 
 interface HeroProps {
@@ -113,7 +114,7 @@ export default function Hero() {
         >
           <div className="relative w-14 h-14 rounded-xl overflow-hidden flex-shrink-0 border border-white/20">
             <img 
-              src="https://images.unsplash.com/photo-1545241047-6083a3684587?auto=format&fit=crop&w=150&q=80" 
+              src={succulent_5Img} 
               alt="Plante grasse d'exception" 
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"
