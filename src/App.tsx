@@ -16,7 +16,7 @@ const CartDrawer = lazy(() => import('./components/modals/CartDrawer'));
 const CareQuiz = lazy(() => import('./components/modals/CareQuiz'));
 
 const LoadingFallback = () => (
-  <div className="flex items-center justify-center min-h-[50vh]">
+  <div className="flex items-center justify-center min-h-[80vh]">
     <div className="w-8 h-8 border-4 border-primary/10 border-t-accent rounded-full animate-spin"></div>
   </div>
 );
