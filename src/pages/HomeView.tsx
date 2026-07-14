@@ -15,7 +15,7 @@ export default function HomeView() {
   return (
     <>
       <Reveal><Hero /></Reveal>
-      <React.Suspense fallback={<div className="h-screen bg-transparent" />}>
+      <React.Suspense fallback={null}>
         <Reveal><HeroBanner /></Reveal>
         <Reveal><FeaturedCollections /></Reveal>
         <Reveal><IntroSection /></Reveal>
