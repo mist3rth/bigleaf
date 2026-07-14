@@ -14,7 +14,7 @@ interface ProductDetailPageProps {
 export default function ProductDetailPage() {
   const { selectedPlant: plant, navigate, setSelectedPlant } = useUI();
   const { addToCart } = useCart();
-  const onClose = () => navigate("home");
+  const onClose = () => navigate("shop");
   const onAddToCart = (p) => { addToCart(p); };
   const onSelectPlant = (p) => setSelectedPlant(p);
   if (!plant) return null;
