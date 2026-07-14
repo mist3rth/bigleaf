@@ -78,7 +78,7 @@ export default function NewPlants() {
           
           {/* List of categories */}
           <div className="flex flex-wrap items-center gap-2">
-            {CATEGORIES.filter(cat => cat.id !== 'all').map((cat) => {
+            {CATEGORIES.filter(cat => cat.id !== 'all' && cat.id !== 'pets-friendly').map((cat) => {
               const isActive = localCategory === cat.id;
               return (
                 <button aria-label="Bouton d'action"
