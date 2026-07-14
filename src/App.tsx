@@ -6,7 +6,7 @@ import { Reveal } from './ui/Reveal';
 import { log } from './utils/logger';
 
 // 1. Centraliser tous les gros composants en Lazy Loading
-const HomeView = lazy(() => import('./pages/HomeView')); // Regroupe Hero, NewPlants, etc.
+import HomeView from './pages/HomeView'; // Eager load the home view for better LCP
 const Shop = lazy(() => import('./pages/Shop'));
 const ProductDetail = lazy(() => import('./pages/ProductDetail'));
 const Team = lazy(() => import('./pages/Team'));
