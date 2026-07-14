@@ -39,10 +39,10 @@ export default function Hero() {
       <div className="absolute top-1/4 right-10 w-64 h-64 bg-accent/20 rounded-full blur-3xl pointer-events-none" />
 
       {/* Main Content Area */}
-      <div className="flex-grow flex flex-col justify-center items-start text-left mt-12 md:mt-16 px-4 max-w-4xl -translate-y-[60px] md:-translate-y-[120px]">
+      <div className="flex-grow flex flex-col justify-center items-start text-left mt-0 sm:mt-12 md:mt-16 px-4 max-w-4xl -translate-y-[60px] md:-translate-y-[120px]">
         
         {/* Gigantic stylized title */}
-        <h1 className="font-display font-extrabold text-4xl sm:text-6xl md:text-7xl lg:text-8xl tracking-tighter text-white leading-[1.1] md:leading-[1.0] mb-0 sm:mb-6 select-none drop-shadow-lg lowercase">
+        <h1 className="font-display font-extrabold text-4xl sm:text-6xl md:text-7xl lg:text-8xl tracking-tighter text-white leading-[1.1] md:leading-[1.0] mb-6 select-none drop-shadow-lg lowercase">
           La nature cultivée pour <span className="font-serif italic font-normal text-gold normal-case">vous</span><span className="text-gold">.</span>
         </h1>
 
