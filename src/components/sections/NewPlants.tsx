@@ -61,7 +61,7 @@ export default function NewPlants() {
           <h2 className="font-display font-bold text-4xl md:text-5xl tracking-tight text-primary leading-none uppercase">
             Nos pépites<span className="text-accent">.</span>
           </h2>
-          <p className="text-xs text-primary/60 font-mono tracking-widest uppercase mt-3">
+          <p className="text-xs text-primary/70 font-mono tracking-widest uppercase mt-3">
             Sélection fraîche de la semaine
           </p>
         </div>
@@ -181,7 +181,7 @@ export default function NewPlants() {
                     <h3 className="font-sans font-bold text-lg text-primary mt-1 leading-tight group-hover:text-accent transition-colors">
                       {plant.name}
                     </h3>
-                    <p className="text-xs text-primary/60 font-sans mt-2 line-clamp-2 leading-relaxed">
+                    <p className="text-xs text-primary/70 font-sans mt-2 line-clamp-2 leading-relaxed">
                       {plant.description}
                     </p>
 
@@ -190,17 +190,17 @@ export default function NewPlants() {
                       <div className="flex items-center gap-1.5 text-primary/80">
                         <MapPin className="w-3.5 h-3.5 text-accent flex-shrink-0" />
                         <span className="font-medium text-primary/90">Origine :</span>
-                        <span className="text-primary/60 line-clamp-1">{plant.origin}</span>
+                        <span className="text-primary/70 line-clamp-1">{plant.origin}</span>
                       </div>
                       <div className="flex items-center gap-1.5 text-primary/80">
                         <Sun className="w-3.5 h-3.5 text-gold flex-shrink-0" />
                         <span className="font-medium text-primary/90">Lumière :</span>
-                        <span className="text-primary/60 line-clamp-1">{plant.care.light}</span>
+                        <span className="text-primary/70 line-clamp-1">{plant.care.light}</span>
                       </div>
                       <div className="flex items-center gap-1.5 text-primary/80">
                         <Droplet className="w-3.5 h-3.5 text-blue-400 flex-shrink-0" />
                         <span className="font-medium text-primary/90">Eau :</span>
-                        <span className="text-primary/60 line-clamp-1">{plant.care.water}</span>
+                        <span className="text-primary/70 line-clamp-1">{plant.care.water}</span>
                       </div>
                     </div>
                   </div>

@@ -159,7 +159,7 @@ export default function ProductListPage() {
         <div>
           <button 
             onClick={onBack}
-            className="group flex items-center gap-2 text-xs font-bold font-mono uppercase tracking-wider text-primary/60 hover:text-accent transition-colors mb-3 cursor-pointer focus:outline-none"
+            className="group flex items-center gap-2 text-xs font-bold font-mono uppercase tracking-wider text-primary/70 hover:text-accent transition-colors mb-3 cursor-pointer focus:outline-none"
           >
             <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
             Retour à l'accueil
@@ -174,7 +174,7 @@ export default function ProductListPage() {
 
         {/* Sorting Dropdown */}
         <div className="flex items-center gap-3 w-full md:w-auto">
-          <span className="text-xs font-mono text-primary/60 uppercase whitespace-nowrap flex items-center gap-1.5">
+          <span className="text-xs font-mono text-primary/70 uppercase whitespace-nowrap flex items-center gap-1.5">
             <ArrowUpDown className="w-3.5 h-3.5" /> Trier par :
           </span>
           <select 
@@ -222,7 +222,7 @@ export default function ProductListPage() {
 
           {/* Categories Option list */}
           <div className="space-y-3">
-            <label className="text-[11px] font-mono tracking-widest text-primary/60 uppercase block">Catégorie</label>
+            <label className="text-[11px] font-mono tracking-widest text-primary/70 uppercase block">Catégorie</label>
             <div className="flex flex-col gap-1.5">
               <button
                 onClick={() => {
@@ -263,7 +263,7 @@ export default function ProductListPage() {
 
           {/* Difficulty Level Option */}
           <div className="space-y-3">
-            <label className="text-[11px] font-mono tracking-widest text-primary/60 uppercase block">Difficulté d'entretien</label>
+            <label className="text-[11px] font-mono tracking-widest text-primary/70 uppercase block">Difficulté d'entretien</label>
             <div className="flex flex-wrap gap-1.5">
               {['all', 'facile', 'modéré', 'expert'].map((diff) => {
                 const isActive = selectedDifficulty === diff;
@@ -422,7 +422,7 @@ export default function ProductListPage() {
                         <h3 className="font-sans font-bold text-lg text-primary mt-1 leading-tight group-hover:text-accent transition-colors">
                           {plant.name}
                         </h3>
-                        <p className="text-xs text-primary/60 font-sans mt-2 line-clamp-2 leading-relaxed">
+                        <p className="text-xs text-primary/70 font-sans mt-2 line-clamp-2 leading-relaxed">
                           {plant.description}
                         </p>
 
@@ -431,17 +431,17 @@ export default function ProductListPage() {
                           <div className="flex items-center gap-1.5 text-primary/80">
                             <MapPin className="w-3.5 h-3.5 text-accent flex-shrink-0" />
                             <span className="font-medium text-primary/90">Origine :</span>
-                            <span className="text-primary/60 line-clamp-1">{plant.origin}</span>
+                            <span className="text-primary/70 line-clamp-1">{plant.origin}</span>
                           </div>
                           <div className="flex items-center gap-1.5 text-primary/80">
                             <Sun className="w-3.5 h-3.5 text-gold flex-shrink-0" />
                             <span className="font-medium text-primary/90">Lumière :</span>
-                            <span className="text-primary/60 line-clamp-1">{plant.care.light}</span>
+                            <span className="text-primary/70 line-clamp-1">{plant.care.light}</span>
                           </div>
                           <div className="flex items-center gap-1.5 text-primary/80">
                             <Droplet className="w-3.5 h-3.5 text-blue-400 flex-shrink-0" />
                             <span className="font-medium text-primary/90">Eau :</span>
-                            <span className="text-primary/60 line-clamp-1">{plant.care.water}</span>
+                            <span className="text-primary/70 line-clamp-1">{plant.care.water}</span>
                           </div>
                         </div>
                       </div>

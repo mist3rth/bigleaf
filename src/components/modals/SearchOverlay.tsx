@@ -115,9 +115,9 @@ export default function SearchOverlay({ isOpen, onClose, onSearch, onOpenQuiz, o
         {/* Live filtered results if user has typed >= 2 chars */}
         {query.trim().length >= 2 ? (
           <div className="space-y-6 text-left animate-fade-in">
-            <h3 className="text-xs uppercase font-mono tracking-widest text-gold border-b border-white/10 pb-2">
+            <h2 className="text-xs uppercase font-mono tracking-widest text-gold border-b border-white/10 pb-2">
               Résultats de recherche ({filteredResults.length})
-            </h3>
+            </h2>
             
             {filteredResults.length === 0 ? (
               <p className="text-sm text-white/50 italic py-4">
@@ -138,7 +138,7 @@ export default function SearchOverlay({ isOpen, onClose, onSearch, onOpenQuiz, o
                       <img src={plant.image} alt={plant.name} className="w-full h-full object-cover" referrerPolicy="no-referrer" />
                     </div>
                     <div>
-                      <h4 className="font-sans font-bold text-base text-white group-hover:text-gold transition-colors">{plant.name}</h4>
+                      <h3 className="font-sans font-bold text-base text-white group-hover:text-gold transition-colors">{plant.name}</h3>
                       <span className="text-xs font-sans font-bold text-gold">{plant.price.toFixed(2)} €</span>
                     </div>
                   </div>
@@ -152,9 +152,9 @@ export default function SearchOverlay({ isOpen, onClose, onSearch, onOpenQuiz, o
             
             {/* 1. PUSH PRODUITS (Products Push) */}
             <div className="md:col-span-7 space-y-6">
-              <h3 className="text-xs uppercase font-mono tracking-widest text-gold border-b border-white/10 pb-2 flex items-center gap-2">
+              <h2 className="text-xs uppercase font-mono tracking-widest text-gold border-b border-white/10 pb-2 flex items-center gap-2">
                 Sélections Vedettes
-              </h3>
+              </h2>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {pushProducts.map(plant => (
@@ -179,9 +179,9 @@ export default function SearchOverlay({ isOpen, onClose, onSearch, onOpenQuiz, o
                     </div>
                     
                     <div>
-                      <h4 className="font-sans font-bold text-sm text-white group-hover:text-gold transition-colors">
+                      <h3 className="font-sans font-bold text-sm text-white group-hover:text-gold transition-colors">
                         {plant.name}
-                      </h4>
+                      </h3>
                       <div className="flex justify-between items-center mt-2 pt-2 border-t border-white/5">
                         <span className="text-xs font-sans font-bold text-white">{plant.price.toFixed(2)} €</span>
                         <span className="text-[9px] uppercase tracking-wider font-mono text-gold group-hover:underline flex items-center gap-1">
@@ -196,24 +196,24 @@ export default function SearchOverlay({ isOpen, onClose, onSearch, onOpenQuiz, o
 
             {/* 2. CONSEILS (Botanical Tips) */}
             <div className="md:col-span-5 space-y-6">
-              <h3 className="text-xs uppercase font-mono tracking-widest text-gold border-b border-white/10 pb-2 flex items-center gap-2">
+              <h2 className="text-xs uppercase font-mono tracking-widest text-gold border-b border-white/10 pb-2 flex items-center gap-2">
                 Conseils d'Atelier
-              </h3>
+              </h2>
               
               <div className="space-y-4">
                 <div className="bg-white/5 rounded-2xl p-4 border border-white/5">
-                  <h4 className="text-xs font-bold text-white uppercase flex items-center gap-1.5">
+                  <h3 className="text-xs font-bold text-white uppercase flex items-center gap-1.5">
                     💧 La Règle d'Arrosage d'or
-                  </h4>
+                  </h3>
                   <p className="text-xs text-white/70 mt-1.5 leading-relaxed">
                     Toujours laisser le terreau sécher à 100% sur toute la hauteur du pot avant d'arroser à nouveau. L'excès d'eau est le premier ennemi de vos succulentes.
                   </p>
                 </div>
 
                 <div className="bg-white/5 rounded-2xl p-4 border border-white/5">
-                  <h4 className="text-xs font-bold text-white uppercase flex items-center gap-1.5">
+                  <h3 className="text-xs font-bold text-white uppercase flex items-center gap-1.5">
                     ☀️ Orientation Idéale
-                  </h4>
+                  </h3>
                   <p className="text-xs text-white/70 mt-1.5 leading-relaxed">
                     Placez vos succulentes à moins d'un mètre d'une fenêtre exposée à l'Est ou au Sud pour qu'elles gardent leurs magnifiques couleurs compactes.
                   </p>
@@ -228,7 +228,7 @@ export default function SearchOverlay({ isOpen, onClose, onSearch, onOpenQuiz, o
       {/* Bottom CTA block */}
       <div className="max-w-screen-2xl mx-auto w-full px-6 py-8 md:px-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-left">
         <div>
-          <h4 className="font-display font-bold text-sm text-white">Besoin d'un diagnostic personnalisé ?</h4>
+          <h2 className="font-display font-bold text-sm text-white">Besoin d'un diagnostic personnalisé ?</h2>
           <p className="text-xs text-white/50">Trouvez la succulente idéale adaptée à votre exposition et votre rythme de vie.</p>
         </div>
         

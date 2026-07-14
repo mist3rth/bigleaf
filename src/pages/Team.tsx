@@ -195,7 +195,7 @@ export default function TeamPage() {
                     <a 
                       href="#" 
                       onClick={(e) => e.preventDefault()}
-                      className="text-primary/60 hover:text-gold transition-colors"
+                      className="text-primary/70 hover:text-gold transition-colors"
                       title={member.instagram}
                     >
                       <Instagram className="w-4 h-4" />
@@ -203,7 +203,7 @@ export default function TeamPage() {
                     <a 
                       href="#" 
                       onClick={(e) => e.preventDefault()}
-                      className="text-primary/60 hover:text-gold transition-colors"
+                      className="text-primary/70 hover:text-gold transition-colors"
                       title="LinkedIn profile"
                     >
                       <Linkedin className="w-4 h-4" />
@@ -211,7 +211,7 @@ export default function TeamPage() {
                     <a 
                       href="#" 
                       onClick={(e) => e.preventDefault()}
-                      className="text-primary/60 hover:text-gold transition-colors"
+                      className="text-primary/70 hover:text-gold transition-colors"
                       title="Contact mail"
                     >
                       <Mail className="w-4 h-4" />

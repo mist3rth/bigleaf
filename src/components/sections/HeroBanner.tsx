@@ -17,7 +17,7 @@ export default function HeroBanner() {
           <h2 className="font-sans font-black text-3xl md:text-4xl lg:text-5xl tracking-tight text-primary leading-none mb-3">
             Le Vert <br /> pour Tous
           </h2>
-          <p className="text-xs md:text-sm text-primary/60 font-sans max-w-sm leading-relaxed">
+          <p className="text-xs md:text-sm text-primary/70 font-sans max-w-sm leading-relaxed">
             Nous croyons que chacun mérite son propre petit coin de paradis botanique.
           </p>
         </div>

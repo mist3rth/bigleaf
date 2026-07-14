@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Search, ShoppingBag, HelpCircle, Menu, X, Home } from 'lucide-react';
-import SearchOverlay from '../components/modals/SearchOverlay';
 import { Succulent } from '../data';
 import { useCart } from '../context/CartContext';
 import { useUI } from '../context/UIContext';
+
+const SearchOverlay = React.lazy(() => import('../components/modals/SearchOverlay'));
 
 export default function Header() {
   const { cartCount } = useCart();
@@ -75,6 +76,7 @@ export default function Header() {
             className={`p-2.5 rounded-full transition-all flex items-center justify-center cursor-pointer shadow-sm ${currentView === 'home' ? 'bg-primary text-white' : 'bg-secondary text-primary hover:bg-primary hover:text-white'}`}
             id="nav-home"
             title="Accueil"
+            aria-label="Accueil"
           >
             <Home className="w-4.5 h-4.5" />
           </a>
@@ -137,6 +139,7 @@ export default function Header() {
             onClick={onOpenCart}
             className="px-3 sm:px-4 py-2 rounded-full bg-primary hover:bg-accent text-white font-sans font-bold text-[10px] sm:text-xs uppercase tracking-wider transition-all flex items-center space-x-1.5 sm:space-x-2 cursor-pointer relative shadow-md"
             id="header-cart"
+            aria-label="Panier"
           >
             <ShoppingBag className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-gold" />
             <span className="hidden sm:inline">Panier</span>
@@ -215,13 +218,15 @@ export default function Header() {
       )}
 
       {/* Full screen Search Overlay with Pushes and Advice */}
-      <SearchOverlay
-        isOpen={isSearchOverlayOpen}
-        onClose={() => setIsSearchOverlayOpen(false)}
-        onSearch={onSearch}
-        onOpenQuiz={onOpenQuiz}
-        onSelectPlant={onSelectPlant}
-      />
+      <React.Suspense fallback={null}>
+        <SearchOverlay
+          isOpen={isSearchOverlayOpen}
+          onClose={() => setIsSearchOverlayOpen(false)}
+          onSearch={onSearch}
+          onOpenQuiz={onOpenQuiz}
+          onSelectPlant={onSelectPlant}
+        />
+      </React.Suspense>
 
     </header>
   );

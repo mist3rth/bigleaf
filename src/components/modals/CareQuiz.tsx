@@ -94,9 +94,9 @@ export default function CareQuiz() {
         {/* Step 1: Location / Sunlight */}
         {step === 1 && (
           <div className="text-left animate-fade-in">
-            <h3 className="font-display font-extrabold text-xl md:text-2xl text-primary uppercase mb-6">
+            <h2 className="font-display font-extrabold text-xl md:text-2xl text-primary uppercase mb-6">
               Où sera installée votre future plante ?
-            </h3>
+            </h2>
             <div className="space-y-3">
               <button
                 onClick={() => handleAnswer('location', 'window')}
@@ -104,7 +104,7 @@ export default function CareQuiz() {
               >
                 <div>
                   <span className="font-bold text-sm text-primary block">Près d'une fenêtre très ensoleillée</span>
-                  <span className="text-xs text-primary/60">Plus de 4 heures de soleil direct par jour.</span>
+                  <span className="text-xs text-primary/70">Plus de 4 heures de soleil direct par jour.</span>
                 </div>
                 <ChevronRight className="w-4 h-4 text-primary/30 group-hover:text-accent transition-all" />
               </button>
@@ -114,7 +114,7 @@ export default function CareQuiz() {
               >
                 <div>
                   <span className="font-bold text-sm text-primary block">Dans une pièce modérément éclairée</span>
-                  <span className="text-xs text-primary/60">Lumière moyenne, bureau ou salon tamisé.</span>
+                  <span className="text-xs text-primary/70">Lumière moyenne, bureau ou salon tamisé.</span>
                 </div>
                 <ChevronRight className="w-4 h-4 text-primary/30 group-hover:text-accent transition-all" />
               </button>
@@ -124,7 +124,7 @@ export default function CareQuiz() {
               >
                 <div>
                   <span className="font-bold text-sm text-primary block">Sur un balcon ou une terrasse extérieure</span>
-                  <span className="text-xs text-primary/60">En plein air, exposé aux variations climatiques.</span>
+                  <span className="text-xs text-primary/70">En plein air, exposé aux variations climatiques.</span>
                 </div>
                 <ChevronRight className="w-4 h-4 text-primary/30 group-hover:text-accent transition-all" />
               </button>
@@ -135,9 +135,9 @@ export default function CareQuiz() {
         {/* Step 2: Pets safety */}
         {step === 2 && (
           <div className="text-left animate-fade-in">
-            <h3 className="font-display font-extrabold text-xl md:text-2xl text-primary uppercase mb-6">
+            <h2 className="font-display font-extrabold text-xl md:text-2xl text-primary uppercase mb-6">
               Avez-vous des animaux de compagnie ?
-            </h3>
+            </h2>
             <div className="space-y-3">
               <button
                 onClick={() => handleAnswer('pets', 'yes')}
@@ -145,7 +145,7 @@ export default function CareQuiz() {
               >
                 <div>
                   <span className="font-bold text-sm text-primary block">Oui, un chat ou chien curieux !</span>
-                  <span className="text-xs text-primary/60">La plante doit être 100% non-toxique et saine en cas d'ingestion.</span>
+                  <span className="text-xs text-primary/70">La plante doit être 100% non-toxique et saine en cas d'ingestion.</span>
                 </div>
                 <ChevronRight className="w-4 h-4 text-primary/30 group-hover:text-accent transition-all" />
               </button>
@@ -155,7 +155,7 @@ export default function CareQuiz() {
               >
                 <div>
                   <span className="font-bold text-sm text-primary block">Non, pas de compagnons à quatre pattes.</span>
-                  <span className="text-xs text-primary/60">Toutes les espèces de succulentes conviennent parfaitement !</span>
+                  <span className="text-xs text-primary/70">Toutes les espèces de succulentes conviennent parfaitement !</span>
                 </div>
                 <ChevronRight className="w-4 h-4 text-primary/30 group-hover:text-accent transition-all" />
               </button>
@@ -172,9 +172,9 @@ export default function CareQuiz() {
         {/* Step 3: Experience level */}
         {step === 3 && (
           <div className="text-left animate-fade-in">
-            <h3 className="font-display font-extrabold text-xl md:text-2xl text-primary uppercase mb-6">
-              Quel est votre profil de jardinier ?
-            </h3>
+            <h2 className="font-display font-extrabold text-xl md:text-2xl text-primary uppercase mb-6">
+              Comment décririez-vous votre main verte ?
+            </h2>
             <div className="space-y-3">
               <button
                 onClick={() => handleAnswer('experience', 'beginner')}
@@ -182,7 +182,7 @@ export default function CareQuiz() {
               >
                 <div>
                   <span className="font-bold text-sm text-primary block">Débutant absolu (j'oublie souvent d'arroser)</span>
-                  <span className="text-xs text-primary/60">Plante résistante aux petits oublis d'entretien.</span>
+                  <span className="text-xs text-primary/70">Plante résistante aux petits oublis d'entretien.</span>
                 </div>
                 <ChevronRight className="w-4 h-4 text-primary/30 group-hover:text-accent transition-all" />
               </button>
@@ -192,7 +192,7 @@ export default function CareQuiz() {
               >
                 <div>
                   <span className="font-bold text-sm text-primary block">Passionné (j'aime observer leur croissance)</span>
-                  <span className="text-xs text-primary/60">Je souhaite des conseils précis et des espèces singulières.</span>
+                  <span className="text-xs text-primary/70">Je souhaite des conseils précis et des espèces singulières.</span>
                 </div>
                 <ChevronRight className="w-4 h-4 text-primary/30 group-hover:text-accent transition-all" />
               </button>
@@ -216,9 +216,9 @@ export default function CareQuiz() {
               <span className="text-xs font-bold uppercase tracking-wider text-accent font-mono">Plante Idéale Trouvée !</span>
             </div>
 
-            <h3 className="font-display font-extrabold text-2xl md:text-3xl text-primary uppercase mb-2 leading-none">
+            <h2 className="font-display font-extrabold text-2xl md:text-3xl text-primary uppercase mb-2 leading-none">
               {recommendation.name}
-            </h3>
+            </h2>
             <p className="text-xs text-primary/50 font-mono italic mb-4">
               {recommendation.scientificName}
             </p>

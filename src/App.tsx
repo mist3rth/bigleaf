@@ -1,8 +1,6 @@
 import React, { useEffect, Suspense, lazy } from 'react';
 import Header from './layouts/Header';
 import Footer from './layouts/Footer';
-import CartDrawer from './components/modals/CartDrawer';
-import CareQuiz from './components/modals/CareQuiz';
 import Hero from './components/sections/Hero';
 import HeroBanner from './components/sections/HeroBanner';
 import FeaturedCollections from './components/sections/FeaturedCollections';
@@ -21,6 +19,10 @@ import { log } from './utils/logger';
 const Shop = lazy(() => import('./pages/Shop'));
 const ProductDetail = lazy(() => import('./pages/ProductDetail'));
 const Team = lazy(() => import('./pages/Team'));
+
+// Lazy loaded modals
+const CartDrawer = lazy(() => import('./components/modals/CartDrawer'));
+const CareQuiz = lazy(() => import('./components/modals/CareQuiz'));
 
 const LoadingFallback = () => (
   <div className="flex items-center justify-center min-h-[50vh]">
@@ -75,8 +77,10 @@ export default function App() {
       <Footer />
 
       {/* Overlays */}
-      <CartDrawer />
-      <CareQuiz />
+      <Suspense fallback={null}>
+        <CartDrawer />
+        <CareQuiz />
+      </Suspense>
     </div>
   );
 }

@@ -53,11 +53,11 @@ export default function CartDrawer() {
         <div className="flex items-center justify-between pb-4 border-b border-primary/10 mb-4">
           <div className="flex items-center space-x-2 text-left min-w-0 pr-2">
             <ShoppingBag className="w-5 h-5 text-accent flex-shrink-0" />
-            <h3 className="font-display font-extrabold text-lg sm:text-xl text-primary uppercase truncate">
+            <h2 className="font-display font-extrabold text-lg sm:text-xl text-primary uppercase truncate">
               {checkoutStep === 'cart' && 'Mon Panier'}
               {checkoutStep === 'form' && 'Livraison'}
               {checkoutStep === 'success' && 'Commande Confirmée'}
-            </h3>
+            </h2>
           </div>
           <button
             onClick={onClose}
@@ -126,9 +126,9 @@ export default function CartDrawer() {
 
                       {/* Info & Quantity controls */}
                       <div className="flex-grow flex flex-col min-w-0 pr-1">
-                        <h4 className="font-display font-bold text-sm text-primary uppercase leading-none truncate">
+                        <h3 className="font-display font-bold text-sm text-primary uppercase leading-none truncate">
                           {item.plant.name}
-                        </h4>
+                        </h3>
                         <span className="text-[10px] font-mono text-primary/40 mt-1">
                           {item.plant.scientificName}
                         </span>
@@ -185,7 +185,7 @@ export default function CartDrawer() {
               </div>
 
               <div>
-                <label className="block text-xs font-bold uppercase text-primary/60 font-mono mb-1.5">Nom Complet</label>
+                <label className="block text-xs font-bold uppercase text-primary/70 font-mono mb-1.5">Nom Complet</label>
                 <input
                   type="text"
                   required
@@ -197,7 +197,7 @@ export default function CartDrawer() {
               </div>
 
               <div>
-                <label className="block text-xs font-bold uppercase text-primary/60 font-mono mb-1.5">Adresse de livraison</label>
+                <label className="block text-xs font-bold uppercase text-primary/70 font-mono mb-1.5">Adresse de livraison</label>
                 <input
                   type="text"
                   required
@@ -210,7 +210,7 @@ export default function CartDrawer() {
 
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-xs font-bold uppercase text-primary/60 font-mono mb-1.5">Code Postal</label>
+                  <label className="block text-xs font-bold uppercase text-primary/70 font-mono mb-1.5">Code Postal</label>
                   <input
                     type="text"
                     required
@@ -221,7 +221,7 @@ export default function CartDrawer() {
                   />
                 </div>
                 <div>
-                  <label className="block text-xs font-bold uppercase text-primary/60 font-mono mb-1.5">Ville</label>
+                  <label className="block text-xs font-bold uppercase text-primary/70 font-mono mb-1.5">Ville</label>
                   <input
                     type="text"
                     required
@@ -234,7 +234,7 @@ export default function CartDrawer() {
               </div>
 
               <div>
-                <label className="block text-xs font-bold uppercase text-primary/60 font-mono mb-1.5">Téléphone mobile</label>
+                <label className="block text-xs font-bold uppercase text-primary/70 font-mono mb-1.5">Téléphone mobile</label>
                 <input
                   type="tel"
                   required
@@ -256,9 +256,9 @@ export default function CartDrawer() {
           {checkoutStep === 'success' && (
             <div className="text-center py-8 px-2 animate-scale-up">
               <CheckCircle className="w-16 h-16 text-accent mx-auto mb-5 animate-pulse" />
-              <h4 className="font-display font-extrabold text-2xl text-primary uppercase">
+              <h2 className="font-display font-extrabold text-2xl text-primary uppercase">
                 Merci pour votre commande !
-              </h4>
+              </h2>
               <p className="text-xs text-primary/50 mt-1 font-mono">ID de Commande: #GRW-{Math.floor(100000 + Math.random() * 900000)}</p>
 
               <div className="bg-secondary/40 rounded-2xl p-5 my-6 text-left border border-primary/5 text-xs text-primary/80 leading-relaxed font-sans space-y-3">
@@ -291,11 +291,11 @@ export default function CartDrawer() {
             
             {/* Invoice Lines */}
             <div className="space-y-2 text-sm text-left mb-5">
-              <div className="flex items-center justify-between text-primary/60 font-sans">
+              <div className="flex items-center justify-between text-primary/70 font-sans">
                 <span>Sous-total</span>
                 <span className="font-mono font-medium whitespace-nowrap">{subtotal.toFixed(2)}&nbsp;€</span>
               </div>
-              <div className="flex items-center justify-between text-primary/60 font-sans">
+              <div className="flex items-center justify-between text-primary/70 font-sans">
                 <span>Frais de port</span>
                 <span className="font-mono font-medium whitespace-nowrap">{shippingFee === 0 ? 'Offerts' : `${shippingFee.toFixed(2)}\u00A0€`}</span>
               </div>

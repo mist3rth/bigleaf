@@ -77,7 +77,7 @@ export default function MonthlyContest() {
                 <span className="w-1.5 h-3 bg-[#7A5C43] rounded-xs flex-shrink-0 mt-1" />
                 <div>
                   <h4 className="font-sans font-bold text-xs uppercase tracking-wide text-primary">Toile de Coton Ciré</h4>
-                  <p className="text-[11px] text-primary/60 mt-1">Imperméable et ultra-robuste face à la terre et à l'usure du temps.</p>
+                  <p className="text-[11px] text-primary/70 mt-1">Imperméable et ultra-robuste face à la terre et à l'usure du temps.</p>
                 </div>
               </div>
 
@@ -85,7 +85,7 @@ export default function MonthlyContest() {
                 <span className="w-1.5 h-3 bg-[#7A5C43] rounded-xs flex-shrink-0 mt-1" />
                 <div>
                   <h4 className="font-sans font-bold text-xs uppercase tracking-wide text-primary">Lanières en Tissu</h4>
-                  <p className="text-[11px] text-primary/60 mt-1">Lanières en tissu robuste ajustable pour un confort de travail absolu.</p>
+                  <p className="text-[11px] text-primary/70 mt-1">Lanières en tissu robuste ajustable pour un confort de travail absolu.</p>
                 </div>
               </div>
 
@@ -93,7 +93,7 @@ export default function MonthlyContest() {
                 <span className="w-1.5 h-3 bg-[#7A5C43] rounded-xs flex-shrink-0 mt-1" />
                 <div>
                   <h4 className="font-sans font-bold text-xs uppercase tracking-wide text-primary font-bold">Poches d'Artisan</h4>
-                  <p className="text-[11px] text-primary/60 mt-1">Multiples compartiments renforcés pour vos cisailles, pelles et vaporisateurs.</p>
+                  <p className="text-[11px] text-primary/70 mt-1">Multiples compartiments renforcés pour vos cisailles, pelles et vaporisateurs.</p>
                 </div>
               </div>
 
@@ -101,7 +101,7 @@ export default function MonthlyContest() {
                 <span className="w-1.5 h-3 bg-[#7A5C43] rounded-xs flex-shrink-0 mt-1" />
                 <div>
                   <h4 className="font-sans font-bold text-xs uppercase tracking-wide text-primary">Logo Brodé Main</h4>
-                  <p className="text-[11px] text-primary/60 mt-1">Notre emblématique feuille BigLeaf finement brodée sur le plastron.</p>
+                  <p className="text-[11px] text-primary/70 mt-1">Notre emblématique feuille BigLeaf finement brodée sur le plastron.</p>
                 </div>
               </div>
             </div>

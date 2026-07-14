@@ -29,7 +29,7 @@ export default function IntroSection() {
             Le Vert pour <br className="hidden md:block" />
             Chacun<span className="text-accent">.</span>
           </h2>
-          <p className="text-xs text-primary/60 font-mono tracking-widest uppercase mt-4">
+          <p className="text-xs text-primary/70 font-mono tracking-widest uppercase mt-4">
             Notre philosophie botanique
           </p>
         </div>

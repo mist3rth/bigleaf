@@ -87,7 +87,7 @@ export default function CuratedGoods() {
 
               {/* Text Content */}
               <div className={`w-full md:w-1/2 pl-12 md:pl-0 ${idx % 2 === 0 ? 'md:pr-16 md:text-right' : 'md:order-2 md:pl-16'}`}>
-                <span className="text-[10px] md:text-xs uppercase font-mono font-bold tracking-widest text-primary/60">
+                <span className="text-[10px] md:text-xs uppercase font-mono font-bold tracking-widest text-primary/70">
                   {step.overline}
                 </span>
                 <h3 className="font-display font-bold text-2xl md:text-3xl text-primary uppercase mt-3 mb-4">

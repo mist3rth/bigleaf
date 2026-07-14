@@ -277,7 +277,7 @@ export default function ProductDetailPage() {
               <button
                 onClick={() => setActiveTab('care')}
                 className={`flex-1 py-3.5 text-xs uppercase font-extrabold tracking-widest font-mono border-r border-primary/10 transition-colors cursor-pointer ${
-                  activeTab === 'care' ? 'bg-secondary text-accent font-bold' : 'text-primary/60 hover:bg-secondary/40'
+                  activeTab === 'care' ? 'bg-secondary text-accent font-bold' : 'text-primary/70 hover:bg-secondary/40'
                 }`}
               >
                 Entretien
@@ -285,7 +285,7 @@ export default function ProductDetailPage() {
               <button
                 onClick={() => setActiveTab('details')}
                 className={`flex-1 py-3.5 text-xs uppercase font-extrabold tracking-widest font-mono border-r border-primary/10 transition-colors cursor-pointer ${
-                  activeTab === 'details' ? 'bg-secondary text-accent font-bold' : 'text-primary/60 hover:bg-secondary/40'
+                  activeTab === 'details' ? 'bg-secondary text-accent font-bold' : 'text-primary/70 hover:bg-secondary/40'
                 }`}
               >
                 Fiche Technique
@@ -293,7 +293,7 @@ export default function ProductDetailPage() {
               <button
                 onClick={() => setActiveTab('story')}
                 className={`flex-1 py-3.5 text-xs uppercase font-extrabold tracking-widest font-mono transition-colors cursor-pointer ${
-                  activeTab === 'story' ? 'bg-secondary text-accent font-bold' : 'text-primary/60 hover:bg-secondary/40'
+                  activeTab === 'story' ? 'bg-secondary text-accent font-bold' : 'text-primary/70 hover:bg-secondary/40'
                 }`}
               >
                 Nos Conseils
